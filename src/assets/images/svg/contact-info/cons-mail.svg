@@ -1,0 +1,17 @@
+<svg width="40.000000" height="40.000000" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <desc>
+        Created with Pixso.
+    </desc>
+    <defs>
+        <clipPath id="clip1_969">
+            <rect id="Icons/mail" width="18.000000" height="18.000000" transform="translate(11.000000 11.000000)" fill="white" fill-opacity="0"/>
+        </clipPath>
+    </defs>
+    <circle id="Ellipse 42" cx="20.000000" cy="20.000000" r="20.000000" fill="#FFB400" fill-opacity="1.000000"/>
+    <rect id="cons/mail" width="18.000000" height="18.000000" transform="translate(11.000000 11.000000)" fill="#FFFFFF" fill-opacity="0"/>
+    <rect id="cons/mail" width="18.000000" height="18.000000" transform="translate(11.000000 11.000000)" fill="#FFFFFF" fill-opacity="0"/>
+    <rect id="Icons/mail" width="18.000000" height="18.000000" transform="translate(11.000000 11.000000)" fill="#FFFFFF" fill-opacity="0"/>
+    <g clip-path="url(#clip1_969)">
+        <path id="Vector" d="M13.25 13.25L26.75 13.25C26.9489 13.25 27.1396 13.329 27.2803 13.4697C27.421 13.6104 27.5 13.8011 27.5 14L27.5 26C27.5 26.1989 27.421 26.3896 27.2803 26.5303C27.1396 26.671 26.9489 26.75 26.75 26.75L13.25 26.75C13.0511 26.75 12.8604 26.671 12.7197 26.5303C12.579 26.3896 12.5 26.1989 12.5 26L12.5 14C12.5 13.8011 12.579 13.6104 12.7197 13.4697C12.8604 13.329 13.0511 13.25 13.25 13.25ZM20.045 19.7622L15.236 15.6785L14.2648 16.8215L20.0547 21.7378L25.7405 16.8177L24.7595 15.683L20.0458 19.7622L20.045 19.7622Z" fill="#2B2B2B" fill-opacity="1.000000" fill-rule="nonzero"/>
+    </g>
+</svg>
