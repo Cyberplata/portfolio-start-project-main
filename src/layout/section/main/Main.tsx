@@ -1,18 +1,24 @@
 import React from 'react';
 import {LeftMain} from "./leftMain/LeftMain";
 import {CenterMain} from "./centerMain/CenterMain";
-import {FlexWrapper} from "../../../components/FlexWrapper";
-import {Container} from "../../../components/Container";
 import {RightMain} from "./rightMain/RightMain";
+import styled from "styled-components";
+import {FlexWrapper} from "../../../components/FlexWrapper";
 
 export const Main = () => {
     return (
-        <FlexWrapper>
-            <Container>
+        <StyledMain>
+            <FlexWrapper>
                 <LeftMain/>
                 <CenterMain/>
                 <RightMain/>
-            </Container>
-        </FlexWrapper>
+            </FlexWrapper>
+        </StyledMain>
     );
 };
+
+const StyledMain = styled.div`
+    display: flex;
+    background-color: #fab9b9;
+    min-height: 100vh;
+`
