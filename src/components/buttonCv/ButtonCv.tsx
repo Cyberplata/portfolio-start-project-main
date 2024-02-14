@@ -1,9 +1,10 @@
 import React from 'react';
+import {Icon} from "../icon/Icon";
 
 export const ButtonCv = () => {
     return (
-        <section>
-            <a href="">DOWNLOAD CV</a>
-        </section>
+        <a href="">DOWNLOAD CV
+            <Icon height={"24px"} width={"24px"} iconId={"vectorArrowDown"}/>
+        </a>
     );
 };
