@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const LinkAsButton = () => {
+export const ButtonCv = () => {
     return (
         <section>
             <a href="">DOWNLOAD CV</a>
