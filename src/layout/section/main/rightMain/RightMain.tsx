@@ -48,7 +48,7 @@ export const RightMain = () => {
 };
 
 const StyledRightMain = styled.div`
-
+    outline: 1px solid #ee8205;
 `
 
 const MainList = styled.ul`

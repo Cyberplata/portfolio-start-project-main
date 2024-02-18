@@ -4,20 +4,20 @@ import {About} from "./about/About";
 import {Languages} from "./languages/Languages";
 import {Skills} from "./skills/Skills";
 import {ExtraSkills} from "./extraskills/ExtraSkills";
-import {ButtonCv} from "../../../../components/buttonCv/ButtonCv";
+import {Link} from "../../../../components/Link/Link";
 import {FlexWrapper} from "../../../../components/FlexWrapper";
 import {Profile} from "./profile/Profile";
 
 export const LeftMain = () => {
     return (
         <StyledLeftMenu>
-            <FlexWrapper direction={"column"} justify={"center"}>
+            <FlexWrapper direction={"column"} justify={"space-between"}>
                 <Profile/>
                 <About/>
                 <Languages/>
                 <Skills/>
                 <ExtraSkills/>
-                <ButtonCv/>
+                <Link name="Download cv" iconId={"vector-arrow-down"}/>
             </FlexWrapper>
         </StyledLeftMenu>
 
@@ -27,7 +27,7 @@ export const LeftMain = () => {
 const StyledLeftMenu = styled.div`
     display: flex;
     flex-direction: column;
-    max-width: 335px;
+    max-width: 305px;
     background-color: #d4ffd3;
     min-height: 100vh;
 `

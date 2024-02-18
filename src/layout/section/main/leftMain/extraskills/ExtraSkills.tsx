@@ -33,7 +33,6 @@ export const ExtraSkills = () => {
                     <span>GIT Knowledge</span>
                 </ExtraSkillsSection>
             </FlexWrapper>
-
         </StyledExtraSkills>
     );
 };

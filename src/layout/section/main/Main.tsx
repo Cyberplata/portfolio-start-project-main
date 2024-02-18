@@ -4,21 +4,24 @@ import {CenterMain} from "./centerMain/CenterMain";
 import {RightMain} from "./rightMain/RightMain";
 import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
+import {Container} from "../../../components/Container";
 
 export const Main = () => {
     return (
         <StyledMain>
-            <FlexWrapper>
-                <LeftMain/>
-                <CenterMain/>
-                <RightMain/>
-            </FlexWrapper>
+            <Container>
+                <FlexWrapper>
+                    <LeftMain/>
+                    <CenterMain/>
+                    <RightMain/>
+                </FlexWrapper>
+            </Container>
         </StyledMain>
     );
 };
 
 const StyledMain = styled.div`
     display: flex;
-    background-color: #fab9b9;
+    background-color: #c7cffa;
     min-height: 100vh;
 `
