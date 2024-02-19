@@ -11,13 +11,17 @@ type LinkPropsType = {
 
 export const Link = (props: LinkPropsType) => {
     return (
-        <StyledLink href="#">{props.name}
+        <StyledLink href="#">
+            {props.name}
             <Icon iconId={props.iconId}/>
         </StyledLink>
     );
 };
 
 const StyledLink = styled.a<LinkPropsType>`
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(255, 180, 0);
     width: ${props => props.widthLink};
     height: ${props => props.heightLink};

@@ -13,7 +13,7 @@ export const CenterMain = () => {
                     <div>
                         <StyledCenterMainTitle>I’m Rayan Adlrdard <span>Front-end</span> Developer</StyledCenterMainTitle>
                         <StyledCenterMainText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc lectus.</StyledCenterMainText>
-                        <Link name="HIRE ME" iconId="arrow-right-black" widthLink="154px" heightLink="50px"/>
+                        <Link name="HIRE ME" iconId="arrow-right-black" widthLink="154px" heightLink="50"/>
                     </div>
                     <StyledPhoto src={photo}/>
                 </FlexWrapper>
@@ -26,6 +26,8 @@ const StyledCenterMain = styled.div`
     background-color: #fff;
     display: flex;
     min-height: 100vh;
+    max-width: 970px;
+    width: 100%;
 `
 
 const StyledCenterMainTitle = styled.h1`

@@ -20,7 +20,6 @@ export const LeftMain = () => {
                 <Link name="Download cv" iconId={"vector-arrow-down"}/>
             </FlexWrapper>
         </StyledLeftMenu>
-
     );
 };
 
