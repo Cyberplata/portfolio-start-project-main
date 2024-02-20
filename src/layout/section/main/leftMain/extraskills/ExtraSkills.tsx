@@ -10,25 +10,25 @@ export const ExtraSkills = () => {
                 <ExtraSkillsTitle>Extra Skills</ExtraSkillsTitle>
                 <ExtraSkillsSection>
                     <a href="#">
-                        <Icon height={"24px"} width={"24px"} iconId={"extraSkill"}/>
+                        <Icon height={"15px"} width={"15px"} viewBox={"0 0 15 15"} iconId={"extraSkill"}/>
                     </a>
                     <span>Bootstrap, Materialize</span>
                 </ExtraSkillsSection>
                 <ExtraSkillsSection>
                     <a href="#">
-                        <Icon height={"24px"} width={"24px"} iconId={"extraSkill"}/>
+                        <Icon height={"15px"} width={"15px"} viewBox={"0 0 15 15"} iconId={"extraSkill"}/>
                     </a>
                     <span>Stylus, Sass, Less</span>
                 </ExtraSkillsSection>
                 <ExtraSkillsSection>
                     <a href="#">
-                        <Icon height={"24px"} width={"24px"} iconId={"extraSkill"}/>
+                        <Icon height={"15px"} width={"15px"} viewBox={"0 0 15 15"} iconId={"extraSkill"}/>
                     </a>
                     <span>Gulp, Webpack, Grunt</span>
                 </ExtraSkillsSection>
                 <ExtraSkillsSection>
                     <a href="#">
-                        <Icon height={"24px"} width={"24px"} iconId={"extraSkill"}/>
+                        <Icon height={"15px"} width={"15px"} viewBox={"0 0 15 15"} iconId={"extraSkill"}/>
                     </a>
                     <span>GIT Knowledge</span>
                 </ExtraSkillsSection>

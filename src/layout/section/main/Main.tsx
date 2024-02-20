@@ -9,7 +9,7 @@ import {Container} from "../../../components/Container";
 export const Main = () => {
     return (
         <StyledMain>
-            <Container>
+            <Container maxWidth={"1440px"}>
                 <FlexWrapper>
                     <LeftMain/>
                     <CenterMain/>

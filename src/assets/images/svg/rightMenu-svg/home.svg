@@ -1,7 +1,18 @@
-<svg width="16.500000" height="14.736328" viewBox="0 0 16.5 14.7363" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="40.000000" height="40.000000" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<desc>
 			Created with Pixso.
 	</desc>
-	<defs/>
-	<path id="Vector" d="M14.25 13.9863C14.25 14.1851 14.171 14.376 14.0303 14.5166C13.8897 14.6572 13.6989 14.7363 13.5 14.7363L3 14.7363C2.80109 14.7363 2.61032 14.6572 2.46967 14.5166C2.32902 14.376 2.25 14.1851 2.25 13.9863L2.25 7.23633L0 7.23633L7.74525 0.195312C7.88333 0.0698242 8.06331 0 8.25 0C8.43669 0 8.61667 0.0698242 8.75475 0.195312L16.5 7.23633L14.25 7.23633L14.25 13.9863Z" fill="#2B2B2B" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<defs>
+		<clipPath id="clip1_250">
+			<rect id="Icons/Home" width="18.000000" height="18.000000" transform="translate(11.000000 11.000000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<circle id="Ellipse 10" cx="20.000000" cy="20.000000" r="20.000000" fill="#FFB400" fill-opacity="1.000000"/>
+	<rect id="Icons/Home" width="18.000000" height="18.000000" transform="translate(11.000000 11.000000)" fill="#FFFFFF" fill-opacity="0"/>
+	<rect id="Icons/Home" width="18.000000" height="18.000000" transform="translate(11.000000 11.000000)" fill="#FFFFFF" fill-opacity="0"/>
+	<rect id="Icons/Home" width="18.000000" height="18.000000" transform="translate(11.000000 11.000000)" fill="#FFFFFF" fill-opacity="0"/>
+	<rect id="Icons/Home" width="18.000000" height="18.000000" transform="translate(11.000000 11.000000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip1_250)">
+		<path id="Vector" d="M25.9999 26C25.9999 26.1987 25.9208 26.3896 25.7802 26.5303C25.6395 26.6709 25.4488 26.75 25.2499 26.75L14.7499 26.75C14.551 26.75 14.3602 26.6709 14.2195 26.5303C14.0789 26.3896 13.9999 26.1987 13.9999 26L13.9999 19.25L11.7499 19.25L19.4951 12.209C19.6332 12.0835 19.8132 12.0137 19.9999 12.0137C20.1866 12.0137 20.3665 12.0835 20.5046 12.209L28.2499 19.25L25.9999 19.25L25.9999 26Z" fill="#2B2B2B" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
 </svg>

@@ -4,9 +4,11 @@ import {About} from "./about/About";
 import {Languages} from "./languages/Languages";
 import {Skills} from "./skills/Skills";
 import {ExtraSkills} from "./extraskills/ExtraSkills";
-import {Link} from "../../../../components/Link/Link";
+import {Link} from "../../../../components/link/Link";
 import {FlexWrapper} from "../../../../components/FlexWrapper";
 import {Profile} from "./profile/Profile";
+import {Icon} from "../../../../components/icon/Icon";
+// import {Container} from "../../../../components/Container";
 
 export const LeftMain = () => {
     return (
@@ -17,7 +19,16 @@ export const LeftMain = () => {
                 <Languages/>
                 <Skills/>
                 <ExtraSkills/>
-                <Link name="Download cv" iconId={"vector-arrow-down"}/>
+                {/*<link name="Download cv" iconId={"vector-arrow-down"}/>*/}
+
+                    <Link width={"220px"} height={"40px"}>
+                        Download cv
+                        <Icon iconId={"vector-arrow-down"}
+                              width={"14px"}
+                              height={"16px"}
+                              viewBox={"0 0 14 16"}/>
+                    </Link>
+
             </FlexWrapper>
         </StyledLeftMenu>
     );
@@ -30,9 +41,3 @@ const StyledLeftMenu = styled.div`
     background-color: #d4ffd3;
     min-height: 100vh;
 `
-
-
-
-
-
-

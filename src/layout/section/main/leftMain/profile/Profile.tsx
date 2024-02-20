@@ -12,32 +12,32 @@ export const Profile = () => {
             <LeftMainList>
                 <LeftMainItem>
                     <LeftMainLink>
-                        <Icon height={"24px"} width={"24px"} iconId={"facebook"}/>
+                        <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"facebook"}/>
                     </LeftMainLink>
                 </LeftMainItem>
                 <LeftMainItem>
                     <LeftMainLink>
-                        <Icon height={"24px"} width={"24px"} iconId={"instagram"}/>
+                        <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"instagram"}/>
                     </LeftMainLink>
                 </LeftMainItem>
                 <LeftMainItem>
                     <LeftMainLink>
-                        <Icon height={"24px"} width={"24px"} iconId={"twitter"}/>
+                        <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"twitter"}/>
                     </LeftMainLink>
                 </LeftMainItem>
                 <LeftMainItem>
                     <LeftMainLink>
-                        <Icon height={"24px"} width={"24px"} iconId={"linkedin"}/>
+                        <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"linkedin"}/>
                     </LeftMainLink>
                 </LeftMainItem>
                 <LeftMainItem>
                     <LeftMainLink>
-                        <Icon height={"24px"} width={"24px"} iconId={"youtube"}/>
+                        <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"youtube"}/>
                     </LeftMainLink>
                 </LeftMainItem>
                 <LeftMainItem>
                     <LeftMainLink>
-                        <Icon height={"24px"} width={"24px"} iconId={"dribbble"}/>
+                        <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"dribbble"}/>
                     </LeftMainLink>
                 </LeftMainItem>
             </LeftMainList>
@@ -51,6 +51,7 @@ const StyledProfile = styled.div`
     justify-content: center;
     align-items: center;
     outline: 1px solid #0e0d0d;
+    
 `
 
 const Photo = styled.img`
