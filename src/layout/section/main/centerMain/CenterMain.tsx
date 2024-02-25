@@ -17,12 +17,11 @@ export const CenterMain = () => {
                         <StyledCenterMainText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat
                             feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc
                             lectus.</StyledCenterMainText>
-                        {/*<link name="HIRE ME" iconId="arrow-right-black" widthLink="154px" heightLink="50"/>*/}
 
-                            <Link width={"154px"} height={"50px"}>
-                                HIRE ME
-                                <Icon width={"16px"} height={"16px"} viewBox={"0 0 16 16"} iconId={"arrow-right-black"}/>
-                            </Link>
+                        <Link width={"154px"} height={"50px"}>
+                            HIRE ME
+                            <Icon width={"16px"} height={"16px"} viewBox={"0 0 16 16"} iconId={"arrow-right-black"}/>
+                        </Link>
                     </div>
                     <StyledPhoto src={photo}/>
                 </FlexWrapper>
@@ -31,12 +30,15 @@ export const CenterMain = () => {
     );
 };
 
-const StyledCenterMain = styled.div`
-    background-color: #fff;
+const StyledCenterMain = styled.header`
+    //background-color: #ffe4b4;
     display: flex;
+    //max-width: 970px;
+    //width: 100%;
     min-height: 100vh;
-    max-width: 970px;
-    width: 100%;
+
+    position: relative;
+    z-index: 9999999;
 `
 
 const StyledCenterMainTitle = styled.h1`
@@ -46,13 +48,7 @@ const StyledCenterMainTitle = styled.h1`
     }
 `
 
-const StyledCenterMainText = styled.p`
-
-`
-
-/*const Box = styled.div`
-`*/
-
+const StyledCenterMainText = styled.p``
 
 const StyledPhoto = styled.img`
     width: 325px;

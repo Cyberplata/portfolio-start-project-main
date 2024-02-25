@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const SectionTitle = styled.h2`
     text-align: center;
+    margin-bottom: 50px;
     /*letter-spacing: 5px;
     margin-bottom: 90px;
     font-family: 'Josefin Sans', sans-serif;
@@ -9,10 +10,6 @@ export const SectionTitle = styled.h2`
     font-weight: 600;*/
     
     position: relative;
-
-/*    p {
-    "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum";
-    }*/
     
     &::after {
         content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum";
@@ -25,7 +22,7 @@ export const SectionTitle = styled.h2`
         width: 100%;
 
         color: rgb(118, 118, 118);
-        //font-family: Inter;
+        font-family: Inter, sans-serif;
         font-size: 15px;
         font-weight: 400;
         line-height: 24px;

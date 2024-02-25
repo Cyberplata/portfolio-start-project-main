@@ -8,7 +8,7 @@ import {FlexWrapper} from "../../../../components/FlexWrapper";
 export const RightMain = () => {
     return (
         <StyledRightMain>
-                <FlexWrapper direction={"column"}>
+                <FlexWrapper direction={"column"} justify={"center"} align={"center"}>
                     <MainList>
                         <MainItem>
                             <MainLink>
@@ -51,8 +51,17 @@ export const RightMain = () => {
     );
 };
 
-const StyledRightMain = styled.div`
-    outline: 1px solid #0000ff;
+const StyledRightMain = styled.aside`
+    max-width: 108px;
+    width: 100%;
+    background-color: #afbefc;
+    min-height: 100vh;
+    //padding: 0 20px;
+    
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -2;
 `
 
 const MainList = styled.ul`

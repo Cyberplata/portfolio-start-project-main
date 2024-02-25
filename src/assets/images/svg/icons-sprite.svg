@@ -533,20 +533,30 @@
         <desc>
             Created with Pixso.
         </desc>
-        <defs/>
-        <path id="Vector"
-              d="M6.36401 9.19287L15.556 0L16.971 1.41406L6.36401 12.021L0 5.65723L1.414 4.24316L6.36401 9.19287Z"
-              fill="#1B1B1B" fill-opacity="1.000000" fill-rule="nonzero"/>
+        <defs>
+            <clipPath id="clip1_525">
+                <rect id="Icons/Check" width="24.885246" height="24.000000" fill="white" fill-opacity="0"/>
+            </clipPath>
+        </defs>
+        <rect id="Icons/Check" width="24.885246" height="24.000000" fill="#FFFFFF" fill-opacity="0"/>
+        <g clip-path="url(#clip1_525)">
+            <path id="Vector" d="M10.3689 15.1721L19.8999 5.979L21.3671 7.39307L10.3689 18L3.77014 11.636L5.23633 10.2219L10.3689 15.1721Z" fill="#FFB400" fill-opacity="1.000000" fill-rule="nonzero"/>
+        </g>
     </g>
 
     <g id="cross">
         <desc>
             Created with Pixso.
         </desc>
-        <defs/>
-        <path id="Vector"
-              d="M6.36401 4.9502L11.314 0L12.728 1.41406L7.77798 6.36377L12.728 11.314L11.314 12.728L6.36401 7.77783L1.414 12.728L0 11.314L4.95001 6.36377L0 1.41406L1.414 0L6.36401 4.9502Z"
-              fill="#1B1B1B" fill-opacity="1.000000" fill-rule="nonzero"/>
+        <defs>
+            <clipPath id="clip1_545">
+                <rect id="Icons/Close" width="24.885246" height="24.000000" fill="white" fill-opacity="0"/>
+            </clipPath>
+        </defs>
+        <rect id="Icons/Close" width="24.885246" height="24.000000" fill="#FFFFFF" fill-opacity="0"/>
+        <g clip-path="url(#clip1_545)">
+            <path id="Vector" d="M12.4426 10.5859L17.5752 5.63599L19.0414 7.05005L13.9088 12L19.0414 16.95L17.5752 18.364L12.4426 13.4141L7.31006 18.364L5.84387 16.95L10.9764 12L5.84387 7.05005L7.31006 5.63599L12.4426 10.5859Z" fill="#767676" fill-opacity="1.000000" fill-rule="nonzero"/>
+        </g>
     </g>
 
     <!--recommendations-->

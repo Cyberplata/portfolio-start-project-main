@@ -8,18 +8,18 @@ import {Link} from "../../../../components/link/Link";
 import {FlexWrapper} from "../../../../components/FlexWrapper";
 import {Profile} from "./profile/Profile";
 import {Icon} from "../../../../components/icon/Icon";
+import {Container} from "../../../../components/Container";
 // import {Container} from "../../../../components/Container";
 
 export const LeftMain = () => {
     return (
         <StyledLeftMenu>
-            <FlexWrapper direction={"column"} justify={"space-between"}>
-                <Profile/>
-                <About/>
-                <Languages/>
-                <Skills/>
-                <ExtraSkills/>
-                {/*<link name="Download cv" iconId={"vector-arrow-down"}/>*/}
+                <FlexWrapper direction={"column"} justify={"space-between"}>
+                    <Profile/>
+                    <About/>
+                    <Languages/>
+                    <Skills/>
+                    <ExtraSkills/>
 
                     <Link width={"220px"} height={"40px"}>
                         Download cv
@@ -29,15 +29,22 @@ export const LeftMain = () => {
                               viewBox={"0 0 14 16"}/>
                     </Link>
 
-            </FlexWrapper>
+                </FlexWrapper>
         </StyledLeftMenu>
     );
 };
 
-const StyledLeftMenu = styled.div`
+const StyledLeftMenu = styled.aside`
     display: flex;
     flex-direction: column;
-    max-width: 305px;
+    max-width: 220px;
+    width: 100%;
     background-color: #d4ffd3;
+    /*margin: 50px 45px;*/
     min-height: 100vh;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
 `
