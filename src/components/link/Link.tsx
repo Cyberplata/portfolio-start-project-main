@@ -6,6 +6,8 @@ type LinkPropsType = {
     height?: string
     borderRadius?: string
     backgroundColor?: string
+    color?: string
+    boxShadow?: string
     dispFlex?: string
     justify?: string
     align?: string
@@ -17,6 +19,8 @@ export const Link = styled.a<LinkPropsType>`
     height: ${props => props.height};
     border-radius: ${props => props.borderRadius};
     background-color: ${props => props.backgroundColor || "rgb(255, 180, 0)"};
+    color: ${props => props.color || "none"};
+    box-shadow: ${props => props.boxShadow || "none"};
     cursor: pointer;
     display: flex;
     justify-content: ${props => props.justify || "center"};

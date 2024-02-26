@@ -8,12 +8,13 @@ import {Gold} from "./pricePlanGold/Gold";
 import {Dimond} from "./pricePlanDimond/Dimond";
 
 
+
 export const PricePlans = () => {
     return (
         <StyledPricePlans>
             <Container>
                 <SectionTitle>Price plans</SectionTitle>
-                <FlexWrapper wrap={"wrap"} justify={"space-between"}>
+                <FlexWrapper justify={"space-between"}>
                     <Silver/>
                     <Gold/>
                     <Dimond/>

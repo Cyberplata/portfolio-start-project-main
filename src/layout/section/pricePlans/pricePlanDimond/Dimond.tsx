@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {FlexWrapper} from "../../../../components/FlexWrapper";
 import {Link} from "../../../../components/link/Link";
 import {theme} from "../../../../styles/Theme";
-import {ServiceSilver} from "./service/ServiceSilver";
+import {ServiceDimond} from "./service/ServiceDimond";
 
 /*type SilverPropsType = {
     title?: string
@@ -11,16 +11,16 @@ import {ServiceSilver} from "./service/ServiceSilver";
     text?: string
 }*/
 
-export const Silver = () => {
+export const Dimond = () => {
     return (
         <StyledPricePlanSilver>
             <FlexWrapper direction={"column"} justify={"center"} align={"center"}>
-                <PricePlanTitle>silver</PricePlanTitle>
-                <PricePlanTotal>$0.00</PricePlanTotal>
+                <PricePlanTitle>dimond</PricePlanTitle>
+                <PricePlanTotal>$80.00</PricePlanTotal>
                 <PricePlanTotalText>For most businesses that want to
                     optimize web queries</PricePlanTotalText>
 
-                <ServiceSilver/>
+                <ServiceDimond/>
 
                 <Link width={"170px"} height={"38px"} borderRadius={"30px"} backgroundColor={"rgb(255, 255, 255)"} boxShadow={"0px 1px 10px 0px rgba(0, 0, 0, 0.15)"}>ORDER NOW</Link>
             </FlexWrapper>

@@ -3,9 +3,10 @@ import {Icon} from "../../../../components/icon/Icon";
 import styled from "styled-components";
 import {FlexWrapper} from "../../../../components/FlexWrapper";
 import {theme} from "../../../../styles/Theme";
+import {Link} from "../../../../components/link/Link";
 
 type ServicePropsType = {
-    iconId: string
+    iconId?: string
     title: string
     description: string
     // width?: string
@@ -19,7 +20,13 @@ export const ServiceAdvertising = (props: ServicePropsType) => {
             <FlexWrapper direction={"column"} align={"center"}>
                 <ServiceTitle>{props.title}</ServiceTitle>
                 <ServiceText>{props.description}</ServiceText>
-                <Icon iconId={props.iconId}/>
+
+                <Link width={"86px"} height={"20px"} backgroundColor={"none"} color={"#FFB400"}>
+                    ORDER NOW
+                    <Icon width={"20px"} height={"20px"} viewBox={"0 0 20 20"} iconId={"right-arrow"}/>
+                </Link>
+
+                {/*<Icon iconId={props.iconId}/>*/}
             </FlexWrapper>
         </StyledServiceAdvertising>
     );
