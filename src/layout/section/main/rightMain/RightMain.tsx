@@ -61,7 +61,7 @@ const StyledRightMain = styled.aside`
     position: fixed;
     right: 0;
     top: 0;
-    z-index: -2;
+    z-index: 99;
 `
 
 const MainList = styled.ul`

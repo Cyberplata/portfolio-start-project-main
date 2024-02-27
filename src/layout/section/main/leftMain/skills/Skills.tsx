@@ -7,22 +7,22 @@ export const Skills = () => {
         <StyledSkills>
             <SkillsTitle>Skills</SkillsTitle>
             <FlexWrapper direction={"column"}>
-                <SkillsSection>
+                <SkillsContent>
                     <span>Html</span>
                     <span>90%</span>
-                </SkillsSection>
-                <SkillsSection>
+                </SkillsContent>
+                <SkillsContent>
                     <span>CSS</span>
                     <span>85%</span>
-                </SkillsSection>
-                <SkillsSection>
+                </SkillsContent>
+                <SkillsContent>
                     <span>PHP</span>
                     <span>75%</span>
-                </SkillsSection>
-                <SkillsSection>
+                </SkillsContent>
+                <SkillsContent>
                     <span>PHP</span>
                     <span>75%</span>
-                </SkillsSection>
+                </SkillsContent>
             </FlexWrapper>
         </StyledSkills>
     );
@@ -36,7 +36,7 @@ const SkillsTitle = styled.h3`
 
 `
 
-const SkillsSection = styled.section`
+const SkillsContent = styled.div`
     display: flex;
     justify-content: space-between;
 `

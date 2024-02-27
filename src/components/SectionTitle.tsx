@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SectionTitle = styled.h2`
     text-align: center;
-    margin-bottom: 50px;
+    //margin-bottom: 50px;
     /*letter-spacing: 5px;
     margin-bottom: 90px;
     font-family: 'Josefin Sans', sans-serif;
@@ -11,7 +11,11 @@ export const SectionTitle = styled.h2`
     
     position: relative;
     
-    &::after {
+    //p {
+    //    margin: 25px 0 50px;
+    //}
+    
+    /*&::after {
         content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum";
         
         display: inline-block;
@@ -29,7 +33,7 @@ export const SectionTitle = styled.h2`
         letter-spacing: 0%;
         text-align: center;
         text-transform: capitalize;
-    }
+    }*/
     
     /*&::before { // сделали нашу линию после заголовка
         content: "";

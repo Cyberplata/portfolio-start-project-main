@@ -4,22 +4,22 @@ import styled from "styled-components";
 export const About = () => {
     return (
         <StyledAbout>
-            <AboutSection>
+            <AboutContent>
                 <span>Age:</span>
                 <span>24</span>
-            </AboutSection>
-            <AboutSection>
+            </AboutContent>
+            <AboutContent>
                 <span>Residence:</span>
                 <span>BD</span>
-            </AboutSection>
-            <AboutSection>
+            </AboutContent>
+            <AboutContent>
                 <span>Freelance:</span>
                 <span>Available</span>
-            </AboutSection>
-            <AboutSection>
+            </AboutContent>
+            <AboutContent>
                 <span>Address:</span>
                 <span>Dhaka,Bangladesh</span>
-            </AboutSection>
+            </AboutContent>
         </StyledAbout>
     );
 };
@@ -28,7 +28,7 @@ const StyledAbout = styled.div`
     outline: 1px solid #0e0d0d;
 `
 
-const AboutSection = styled.section`
+const AboutContent = styled.div`
     display: flex;
     justify-content: space-between;
 `

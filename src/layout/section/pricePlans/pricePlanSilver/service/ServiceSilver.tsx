@@ -68,6 +68,9 @@ export const ServiceSilver = () => {
 const StyledServiceSilver = styled.div`
     outline: 1px solid #0e0d0d;
     margin: 20px 0 20px;
+    //display: flex;
+    //justify-content: start;
+    //align-items: flex-start;
 `
 
 const ServiceSection = styled.div`

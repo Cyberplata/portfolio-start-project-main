@@ -8,30 +8,30 @@ export const ExtraSkills = () => {
         <StyledExtraSkills>
             <FlexWrapper direction={"column"}>
                 <ExtraSkillsTitle>Extra Skills</ExtraSkillsTitle>
-                <ExtraSkillsSection>
+                <ExtraSkillsContent>
                     <a href="#">
                         <Icon height={"15px"} width={"15px"} viewBox={"0 0 15 15"} iconId={"extraSkill"}/>
                     </a>
                     <span>Bootstrap, Materialize</span>
-                </ExtraSkillsSection>
-                <ExtraSkillsSection>
+                </ExtraSkillsContent>
+                <ExtraSkillsContent>
                     <a href="#">
                         <Icon height={"15px"} width={"15px"} viewBox={"0 0 15 15"} iconId={"extraSkill"}/>
                     </a>
                     <span>Stylus, Sass, Less</span>
-                </ExtraSkillsSection>
-                <ExtraSkillsSection>
+                </ExtraSkillsContent>
+                <ExtraSkillsContent>
                     <a href="#">
                         <Icon height={"15px"} width={"15px"} viewBox={"0 0 15 15"} iconId={"extraSkill"}/>
                     </a>
                     <span>Gulp, Webpack, Grunt</span>
-                </ExtraSkillsSection>
-                <ExtraSkillsSection>
+                </ExtraSkillsContent>
+                <ExtraSkillsContent>
                     <a href="#">
                         <Icon height={"15px"} width={"15px"} viewBox={"0 0 15 15"} iconId={"extraSkill"}/>
                     </a>
                     <span>GIT Knowledge</span>
-                </ExtraSkillsSection>
+                </ExtraSkillsContent>
             </FlexWrapper>
         </StyledExtraSkills>
     );
@@ -45,7 +45,7 @@ const ExtraSkillsTitle = styled.h3`
 
 `
 
-const ExtraSkillsSection = styled.section`
+const ExtraSkillsContent = styled.div`
     display: flex;
     justify-content: space-between;
 `

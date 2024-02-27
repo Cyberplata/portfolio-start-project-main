@@ -31,14 +31,14 @@ export const CenterMain = () => {
 };
 
 const StyledCenterMain = styled.header`
+    border: 1px solid #0606f5;
     //background-color: #ffe4b4;
     display: flex;
     //max-width: 970px;
     //width: 100%;
     min-height: 100vh;
-
     position: relative;
-    z-index: 9999999;
+    //z-index: 9999999;
 `
 
 const StyledCenterMainTitle = styled.h1`

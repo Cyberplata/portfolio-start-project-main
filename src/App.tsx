@@ -5,6 +5,7 @@ import {CenterMain} from "./layout/section/main/centerMain/CenterMain";
 import {LeftMain} from "./layout/section/main/leftMain/LeftMain";
 import {RightMain} from "./layout/section/main/rightMain/RightMain";
 import {PricePlans} from "./layout/section/pricePlans/PricePlans";
+import {Recommendations} from "./layout/section/recommendations/Recommendations";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
             {/*<RightMain/>*/}
             <Services/>
             <PricePlans/>
+            <Recommendations/>
         </div>
     );
 }

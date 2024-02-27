@@ -32,7 +32,7 @@ const StyledPricePlanSilver = styled.div`
     background-color: ${theme.colors.primaryBg};
     max-width: 310px;
     width: 100%;
-    margin: 100px 20px 70px;
+    //margin: 100px 20px 70px;
 `
 
 const PricePlanTitle = styled.h3`

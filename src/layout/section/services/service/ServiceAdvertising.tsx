@@ -21,7 +21,7 @@ export const ServiceAdvertising = (props: ServicePropsType) => {
                 <ServiceTitle>{props.title}</ServiceTitle>
                 <ServiceText>{props.description}</ServiceText>
 
-                <Link width={"86px"} height={"20px"} backgroundColor={"none"} color={"#FFB400"}>
+                <Link backgroundColor={"unset"} color={"rgb(255, 180, 0)"} gap={"0"}>
                     ORDER NOW
                     <Icon width={"20px"} height={"20px"} viewBox={"0 0 20 20"} iconId={"right-arrow"}/>
                 </Link>

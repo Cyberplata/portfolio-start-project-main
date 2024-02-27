@@ -7,18 +7,18 @@ export const Languages = () => {
         <StyledLanguages>
             <LanguagesTitle>Languages</LanguagesTitle>
             <FlexWrapper direction={"column"}>
-                <LanguagesSection>
+                <LanguagesContent>
                     <span>Bangla</span>
                     <span>100%</span>
-                </LanguagesSection>
-                <LanguagesSection>
+                </LanguagesContent>
+                <LanguagesContent>
                     <span>English</span>
                     <span>80%</span>
-                </LanguagesSection>
-                <LanguagesSection>
+                </LanguagesContent>
+                <LanguagesContent>
                     <span>Spanish</span>
                     <span>60%</span>
-                </LanguagesSection>
+                </LanguagesContent>
             </FlexWrapper>
         </StyledLanguages>
     );
@@ -32,7 +32,7 @@ const LanguagesTitle = styled.h3`
 
 `
 
-const LanguagesSection = styled.section`
+const LanguagesContent = styled.div`
     display: flex;
     justify-content: space-between;
 `
