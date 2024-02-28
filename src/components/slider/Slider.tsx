@@ -32,6 +32,7 @@ export const Slider = () => {
 };
 
 const StyledSlider = styled.div`
+    background-color: #fff;
     border: 1px solid red;
     display: flex;
     flex-direction: column;

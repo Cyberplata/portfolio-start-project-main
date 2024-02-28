@@ -34,11 +34,11 @@ export const GlobalStyle = createGlobalStyle`
         border: none;
     }
 
-    header {
+    /*header {
         background-color: ${theme.colors.primaryBg};
     }
 
     section:not(:first-child) {
         background-color: ${theme.colors.secondaryBg};
-    }
+    }*/
 `

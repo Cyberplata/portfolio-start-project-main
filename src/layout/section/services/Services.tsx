@@ -10,10 +10,12 @@ export const Services = () => {
     return (
         <StyledServices>
             <Container>
-                <SectionTitle>my services</SectionTitle>
-                <FlexWrapper justify={"center"} align={"center"}>
-                    <StyledServicesDescription>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum</StyledServicesDescription>
-                </FlexWrapper>
+                {/*<SectionTitle>my services</SectionTitle>*/}
+                {/*<FlexWrapper justify={"center"} align={"center"}>*/}
+                {/*    <StyledServicesDescription>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum</StyledServicesDescription>*/}
+                {/*</FlexWrapper>*/}
+
+                <SectionTitle textTitle={"my services"} textDiscription={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum"}/>
 
                 <FlexWrapper wrap={"wrap"} justify={"space-between"}>
                     <Service iconId={"my-services-coding"}
@@ -43,6 +45,7 @@ export const Services = () => {
 };
 
 const StyledServices = styled.section`
+    background-color: #9db0fa;
     min-height: 100vh;
     display: flex;
     position: relative;
@@ -51,6 +54,7 @@ const StyledServices = styled.section`
     border: 1px solid #0606f5;
 `
 
+/*
 const StyledServicesDescription = styled.p`
     max-width: 438px;
     width: 100%;
@@ -60,4 +64,4 @@ const StyledServicesDescription = styled.p`
     //display: flex;
     //justify-content: center;
     //align-items: center;
-`
+`*/

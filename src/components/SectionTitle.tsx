@@ -1,21 +1,67 @@
 import styled from "styled-components";
+import React from 'react';
+import {FlexWrapper} from "./FlexWrapper";
 
-export const SectionTitle = styled.h2`
+type SectionTitlePropsType = {
+    textTitle: string
+    textDiscription: string
+}
+
+export const SectionTitle = (props: SectionTitlePropsType) => {
+    return (
+        <div>
+            <StyledSectionTitle>{props.textTitle}</StyledSectionTitle>
+            <FlexWrapper justify={"center"} align={"center"}>
+                <StyledSectionDiscription>{props.textDiscription}</StyledSectionDiscription>
+            </FlexWrapper>
+        </div>
+
+    );
+};
+
+
+const StyledSectionTitle = styled.h2`
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 123.6%;
+    //letter-spacing: 0%;
     text-align: center;
+    text-transform: capitalize;
+`
+
+const StyledSectionDiscription = styled.h2`
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    //letter-spacing: 0%;
+    text-align: center;
+    text-transform: capitalize;
+
+    max-width: 438px;
+    width: 100%;
+    margin: 25px 0 50px;
+`
+
+
+/*
+export const SectionTitle = styled.h2`
+    //text-align: center;
     //margin-bottom: 50px;
-    /*letter-spacing: 5px;
+    /!*letter-spacing: 5px;
     margin-bottom: 90px;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 36px;
-    font-weight: 600;*/
+    font-weight: 600;*!/
     
-    position: relative;
+    //position: relative;
     
     //p {
     //    margin: 25px 0 50px;
     //}
     
-    /*&::after {
+    /!*&::after {
         content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum";
         
         display: inline-block;
@@ -33,9 +79,9 @@ export const SectionTitle = styled.h2`
         letter-spacing: 0%;
         text-align: center;
         text-transform: capitalize;
-    }*/
+    }*!/
     
-    /*&::before { // сделали нашу линию после заголовка
+    /!*&::before { // сделали нашу линию после заголовка
         content: "";
         display: inline-block;
         width: 55px;
@@ -50,5 +96,5 @@ export const SectionTitle = styled.h2`
         @media  {
             bottom: -24px;
         }
-    }*/
-`
+    }*!/
+`*/

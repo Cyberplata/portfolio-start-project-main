@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from "styled-components";
-import {FlexWrapper} from "../../../../components/FlexWrapper";
-import {Link} from "../../../../components/link/Link";
-import photo from "../../../../assets/images/jpg/Good/Good-2/ProfileMain.webp"
-import {Container} from "../../../../components/Container";
-import {Icon} from "../../../../components/icon/Icon";
+import {FlexWrapper} from "../../components/FlexWrapper";
+import {Link} from "../../components/link/Link";
+import photo from "../../assets/images/jpg/Good/Good-2/ProfileMain.webp"
+import {Container} from "../../components/Container";
+import {Icon} from "../../components/icon/Icon";
 
-export const CenterMain = () => {
+export const Header = () => {
     return (
         <StyledCenterMain>
             <Container>
@@ -32,7 +32,7 @@ export const CenterMain = () => {
 
 const StyledCenterMain = styled.header`
     border: 1px solid #0606f5;
-    //background-color: #ffe4b4;
+    background-color: #ffe4b4;
     display: flex;
     //max-width: 970px;
     //width: 100%;

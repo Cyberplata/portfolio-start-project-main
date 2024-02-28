@@ -8,11 +8,13 @@ import {Slider} from "../../../components/slider/Slider";
 export const Recommendations = () => {
     return (
         <StyledRecommendations>
-            <SectionTitle>recommendations</SectionTitle>
-            <FlexWrapper justify={"center"}>
-                <RecommendationsDescription>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                    Velit officia consequat duis enim velit mollit. lorem ipsum</RecommendationsDescription>
-            </FlexWrapper>
+            {/*<SectionTitle>recommendations</SectionTitle>*/}
+            {/*<FlexWrapper justify={"center"}>*/}
+            {/*    <RecommendationsDescription>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.*/}
+            {/*        Velit officia consequat duis enim velit mollit. lorem ipsum</RecommendationsDescription>*/}
+            {/*</FlexWrapper>*/}
+
+            <SectionTitle textTitle={"my services"} textDiscription={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum"}/>
 
             <Container>
                 <Slider/>
@@ -23,9 +25,11 @@ export const Recommendations = () => {
 };
 
 const StyledRecommendations = styled.section`
+    background-color: #e7f8bc;
     min-height: 100vh;
 `
 
+/*
 const RecommendationsDescription = styled.p`
     max-width: 438px;
     width: 100%;
@@ -34,4 +38,4 @@ const RecommendationsDescription = styled.p`
     //display: flex;
     //justify-content: center;
     //align-items: center;
-`
+`*/
