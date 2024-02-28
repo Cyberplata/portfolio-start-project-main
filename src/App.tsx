@@ -6,6 +6,8 @@ import {LeftMain} from "./layout/section/main/leftMain/LeftMain";
 import {RightMain} from "./layout/section/main/rightMain/RightMain";
 import {PricePlans} from "./layout/section/pricePlans/PricePlans";
 import {Recommendations} from "./layout/section/recommendations/Recommendations";
+import {Education} from "./layout/section/education/Education";
+import {WorkHistory} from "./layout/section/workHistory/WorkHistory";
 
 
 function App() {
@@ -17,7 +19,8 @@ function App() {
             <Services/>
             <PricePlans/>
             <Recommendations/>
-            {/*<Education/>*/}
+            <Education/>
+            <WorkHistory/>
         </div>
     );
 }

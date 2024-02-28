@@ -46,6 +46,7 @@ const Pagination = styled.div`
         display: inline-block;
         width: 10px;
         height: 10px;
+        border-radius: 10px;
         margin: 10px;
         background-color: ${theme.colors.accent};
     }
