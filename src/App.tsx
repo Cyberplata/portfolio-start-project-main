@@ -9,6 +9,7 @@ import {Recommendations} from "./layout/section/recommendations/Recommendations"
 import {Education} from "./layout/section/education/Education";
 import {WorkHistory} from "./layout/section/workHistory/WorkHistory";
 import {Portfolio} from "./layout/section/portfolio/Portfolio";
+import {Blog} from "./layout/section/blog/Blog";
 
 
 
@@ -24,6 +25,7 @@ function App() {
             <Education/>
             <WorkHistory/>
             <Portfolio/>
+            <Blog/>
         </div>
     );
 }
