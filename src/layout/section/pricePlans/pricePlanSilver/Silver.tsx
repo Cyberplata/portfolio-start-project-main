@@ -4,6 +4,7 @@ import {FlexWrapper} from "../../../../components/FlexWrapper";
 import {Link} from "../../../../components/link/Link";
 import {theme} from "../../../../styles/Theme";
 import {ServiceSilver} from "./service/ServiceSilver";
+import {PricePlanTotal} from "../pricePlanTotal/PricePlanTotal";
 
 /*type SilverPropsType = {
     title?: string
@@ -29,6 +30,7 @@ export const Silver = () => {
 };
 
 const StyledPricePlanSilver = styled.div`
+    border: 1px solid black;
     background-color: ${theme.colors.primaryBg};
     //max-width: 310px;
     width: 100%;
@@ -39,9 +41,28 @@ const PricePlanTitle = styled.h3`
 
 `
 
-const PricePlanTotal = styled.p`
+/*const PricePlanTotal = styled.p`
     margin: 20px 0 8px;
-`
+    
+    position: relative;
+    
+    &::after {
+        content: "/hour";
+
+        display: inline-block;
+        position: absolute;
+        left: 50px;
+
+        color: rgb(43, 43, 43);
+        font-family: "Inter", sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: left;
+        text-transform: capitalize;
+    }
+`*/
 
 const PricePlanTotalText = styled.p`
     

@@ -1,5 +1,5 @@
 import React from 'react';
-import photoCircle from "../../../../../assets/images/jpg/Good/ProfileCircle.jpg";
+import photoCircle from "../../../../../assets/images/jpg/Good/ProfileCircle.webp";
 import {Icon} from "../../../../../components/icon/Icon";
 import styled from "styled-components";
 

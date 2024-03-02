@@ -4,6 +4,7 @@ export const theme = {
         secondaryBg: "#F0F0F6",
         accent: "#FFB400",
 
-        font: "#2B2B2B"
+        font: "#2B2B2B",
+        fontDiscription: "#767676"
     }
 }

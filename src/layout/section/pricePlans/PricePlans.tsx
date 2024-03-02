@@ -19,7 +19,7 @@ export const PricePlans = () => {
                         Velit officia consequat duis enim velit mollit. lorem ipsum</PricePlansDescription>
                 </FlexWrapper>*/}
 
-                <SectionTitle textTitle={"my services"} textDiscription={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum"}/>
+                <SectionTitle textTitle={"Price plans"} textDiscription={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum"}/>
 
                 <FlexWrapper justify={"space-between"}>
                     <Silver/>

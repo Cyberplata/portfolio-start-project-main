@@ -4,6 +4,7 @@ import {FlexWrapper} from "../../../../components/FlexWrapper";
 import {Link} from "../../../../components/link/Link";
 import {theme} from "../../../../styles/Theme";
 import {ServiceGold} from "./service/ServiceGold";
+import {PricePlanTotal} from "../pricePlanTotal/PricePlanTotal";
 
 // type PricePlanGoldPropsType = {
 //     title?: string
@@ -29,6 +30,7 @@ export const Gold = () => {
 };
 
 const StyledPricePlanGold = styled.div`
+    border: 1px solid black;
     background-color: ${theme.colors.primaryBg};
     max-width: 310px;
     width: 100%;
@@ -39,9 +41,9 @@ const PricePlanTitle = styled.h3`
 
 `
 
-const PricePlanTotal = styled.p`
+/*const PricePlanTotal = styled.p`
     margin: 20px 0 8px;
-`
+`*/
 
 const PricePlanTotalText = styled.p`
     

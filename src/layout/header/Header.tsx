@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {Link} from "../../components/link/Link";
-import photo from "../../assets/images/jpg/Good/Good-2/ProfileMain.webp"
+import photo from "../../assets/images/jpg/Good/ProfileMain.webp"
 import {Container} from "../../components/Container";
 import {Icon} from "../../components/icon/Icon";
 

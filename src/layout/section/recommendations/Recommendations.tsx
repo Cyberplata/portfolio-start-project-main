@@ -14,7 +14,7 @@ export const Recommendations = () => {
             {/*        Velit officia consequat duis enim velit mollit. lorem ipsum</RecommendationsDescription>*/}
             {/*</FlexWrapper>*/}
 
-            <SectionTitle textTitle={"my services"} textDiscription={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum"}/>
+            <SectionTitle textTitle={"recommendations"} textDiscription={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum"}/>
 
             <Container>
                 <Slider/>

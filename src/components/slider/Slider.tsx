@@ -2,9 +2,9 @@ import React from 'react';
 import {FlexWrapper} from "../FlexWrapper";
 import styled from "styled-components";
 import {Review} from "./slider/Review";
-import jamesImg from "../../assets/images/jpg/Good/Good-2/Recommendations-James.webp"
-import tianaImg from "../../assets/images/jpg/Good/Good-2/Recommendations-Tiana.webp"
-import talanImg from "../../assets/images/jpg/Good/Good-2/Recommendations-Talan.webp"
+import jamesImg from "../../assets/images/jpg/Good/recommendations/Recommendations-James.webp"
+import tianaImg from "../../assets/images/jpg/Good/recommendations/Recommendations-Tiana.webp"
+import talanImg from "../../assets/images/jpg/Good/recommendations/Recommendations-Talan.webp"
 import {theme} from "../../styles/Theme";
 
 

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import React from 'react';
 import {FlexWrapper} from "./FlexWrapper";
+import {theme} from "../styles/Theme";
 
 type SectionTitlePropsType = {
     textTitle: string
@@ -31,6 +32,7 @@ const StyledSectionTitle = styled.h2`
 `
 
 const StyledSectionDiscription = styled.h2`
+    color: ${theme.colors.fontDiscription};
     font-family: 'Inter', sans-serif;
     font-size: 15px;
     font-weight: 400;
