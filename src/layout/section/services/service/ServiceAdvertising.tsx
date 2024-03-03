@@ -33,6 +33,8 @@ export const ServiceAdvertising = (props: ServicePropsType) => {
 };
 
 const StyledServiceAdvertising = styled.div`
+    outline: 1px solid #0e0d0d;
+    
     background-color: ${theme.colors.primaryBg};
     width: 310px;
     padding: 62px 20px 40px;

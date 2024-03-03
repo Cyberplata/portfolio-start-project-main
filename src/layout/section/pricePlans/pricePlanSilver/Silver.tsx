@@ -32,7 +32,7 @@ export const Silver = () => {
 const StyledPricePlanSilver = styled.div`
     border: 1px solid black;
     background-color: ${theme.colors.primaryBg};
-    //max-width: 310px;
+    max-width: 310px;
     width: 100%;
     //margin: 100px 20px 70px;
 `

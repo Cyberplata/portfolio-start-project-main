@@ -68,5 +68,6 @@ const StyledServiceDimond = styled.div`
 
 const ServiceSection = styled.div`
     display: flex;
-    justify-content: space-between;
+    //justify-content: space-between;
+    gap: 14px;
 `

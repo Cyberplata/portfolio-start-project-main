@@ -21,7 +21,7 @@ export const PricePlans = () => {
 
                 <SectionTitle textTitle={"Price plans"} textDiscription={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum"}/>
 
-                <FlexWrapper justify={"space-between"}>
+                <FlexWrapper justify={"space-between"} wrap={"wrap"}>
                     <Silver/>
                     <Gold/>
                     <Dimond/>
@@ -36,7 +36,7 @@ const StyledPricePlans = styled.section`
     background-color: #f8f0a8;
     display: flex;
     //max-width: 248px;
-    width: 100%;
+    //width: 100%;
     min-height: 100vh;
 `
 

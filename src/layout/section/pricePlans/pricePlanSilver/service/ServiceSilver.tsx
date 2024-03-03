@@ -10,7 +10,7 @@ import {Icon} from "../../../../../components/icon/Icon";
 export const ServiceSilver = () => {
     return (
         <StyledServiceSilver>
-            <FlexWrapper direction={"column"} justify={"space-between"}>
+            <FlexWrapper direction={"column"}>
                 <ServiceSection>
                     <a href="#">
                         <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"check"}/>
@@ -75,5 +75,6 @@ const StyledServiceSilver = styled.div`
 
 const ServiceSection = styled.div`
     display: flex;
-    justify-content: space-between;
+    gap: 14px;
+    //justify-content: space-between;
 `

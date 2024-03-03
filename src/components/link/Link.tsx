@@ -8,7 +8,7 @@ type LinkPropsType = {
     backgroundColor?: string
     color?: string
     boxShadow?: string
-    dispFlex?: string
+    // displayFlex?: string
     justify?: string
     align?: string
     gap?: string

@@ -10,6 +10,9 @@ import {Education} from "./layout/section/education/Education";
 import {WorkHistory} from "./layout/section/workHistory/WorkHistory";
 import {Portfolio} from "./layout/section/portfolio/Portfolio";
 import {Blog} from "./layout/section/blog/Blog";
+import {Info} from "./layout/section/info/Info";
+import {Map} from "./layout/section/map/Map";
+import { Logo } from './layout/section/logo/Logo';
 
 
 
@@ -26,6 +29,9 @@ function App() {
             <WorkHistory/>
             <Portfolio/>
             <Blog/>
+            <Info/>
+            <Map/>
+            <Logo/>
         </div>
     );
 }
