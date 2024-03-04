@@ -5,10 +5,16 @@ import {Link} from "../../components/link/Link";
 import photo from "../../assets/images/jpg/Good/ProfileMain.webp"
 import {Container} from "../../components/Container";
 import {Icon} from "../../components/icon/Icon";
+import {LeftMain} from "../section/main/leftMain/LeftMain";
+import {RightMain} from "../section/main/rightMain/RightMain";
 
 export const Header = () => {
     return (
         <StyledCenterMain>
+
+            <LeftMain/>
+            <RightMain/>
+
             <Container>
                 <FlexWrapper align={"center"} justify={"space-between"}>
                     <div>

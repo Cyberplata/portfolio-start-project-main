@@ -2,43 +2,47 @@ import React from 'react';
 import photoCircle from "../../../../../assets/images/jpg/Good/ProfileCircle.webp";
 import {Icon} from "../../../../../components/icon/Icon";
 import styled from "styled-components";
+import {FlexWrapper} from "../../../../../components/FlexWrapper";
+import {Link} from "../../../../../components/link/Link";
 
 export const Profile = () => {
     return (
         <StyledProfile>
-            <Photo src={photoCircle}/>
-            <LeftMenuTitle>Rayan Adlardard</LeftMenuTitle>
-            <LeftMenuText>Font-end Developer</LeftMenuText>
+            <FlexWrapper direction={"column"} justify={"center"} align={"center"}>
+                <Photo src={photoCircle}/>
+                <LeftMenuTitle>Rayan Adlardard</LeftMenuTitle>
+                <LeftMenuText>Front-end Developer</LeftMenuText>
+            </FlexWrapper>
             <LeftMainList>
                 <LeftMainItem>
-                    <LeftMainLink>
+                    <Link borderRadius={"50%"}>
                         <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"facebook"}/>
-                    </LeftMainLink>
+                    </Link>
                 </LeftMainItem>
                 <LeftMainItem>
-                    <LeftMainLink>
+                    <Link borderRadius={"50%"}>
                         <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"instagram"}/>
-                    </LeftMainLink>
+                    </Link>
                 </LeftMainItem>
                 <LeftMainItem>
-                    <LeftMainLink>
+                    <Link borderRadius={"50%"}>
                         <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"twitter"}/>
-                    </LeftMainLink>
+                    </Link>
                 </LeftMainItem>
                 <LeftMainItem>
-                    <LeftMainLink>
+                    <Link borderRadius={"50%"}>
                         <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"linkedin"}/>
-                    </LeftMainLink>
+                    </Link>
                 </LeftMainItem>
                 <LeftMainItem>
-                    <LeftMainLink>
+                    <Link borderRadius={"50%"}>
                         <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"youtube"}/>
-                    </LeftMainLink>
+                    </Link>
                 </LeftMainItem>
                 <LeftMainItem>
-                    <LeftMainLink>
+                    <Link borderRadius={"50%"}>
                         <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"dribbble"}/>
-                    </LeftMainLink>
+                    </Link>
                 </LeftMainItem>
             </LeftMainList>
         </StyledProfile>
@@ -46,11 +50,11 @@ export const Profile = () => {
 };
 
 const StyledProfile = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    outline: 1px solid #0e0d0d;
+    //display: flex;
+    //flex-direction: column;
+    //justify-content: center;
+    //align-items: center;
+    border: 1px solid #0e0d0d;
     
 `
 
@@ -58,6 +62,7 @@ const Photo = styled.img`
     width: 150px;
     height: 150px;
     object-fit: cover;
+    border-radius: 50%;
 `
 
 const LeftMenuTitle = styled.h3`
@@ -78,6 +83,6 @@ const LeftMainItem = styled.li`
 
 `
 
-const LeftMainLink = styled.a`
-
-`
+// const LeftMainLink = styled.a`
+//
+// `

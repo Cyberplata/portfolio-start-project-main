@@ -14,7 +14,7 @@ import {Container} from "../../../../components/Container";
 export const LeftMain = () => {
     return (
         <StyledLeftMenu>
-                <FlexWrapper direction={"column"} justify={"space-between"}>
+                <FlexWrapper direction={"column"} justify={"space-between"} gap={"25px"}>
                     <Profile/>
                     <About/>
                     <Languages/>
@@ -35,14 +35,16 @@ export const LeftMain = () => {
 };
 
 const StyledLeftMenu = styled.aside`
-    display: flex;
-    flex-direction: column;
+    border: 1px solid mediumvioletred;
+
+    //display: flex;
+    //flex-direction: column;
     max-width: 220px;
     width: 100%;
-    background-color: #d4ffd3;
+    background-color: #eeffed;
     /*margin: 50px 45px;*/
     min-height: 100vh;
-    
+
     position: fixed;
     top: 0;
     left: 0;
