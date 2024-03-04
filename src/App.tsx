@@ -13,6 +13,7 @@ import {Blog} from "./layout/section/blog/Blog";
 import {Info} from "./layout/section/info/Info";
 import {Map} from "./layout/section/map/Map";
 import { Logo } from './layout/section/logo/Logo';
+import {Footer} from "./layout/footer/Footer";
 
 
 
@@ -32,6 +33,7 @@ function App() {
             <Info/>
             <Map/>
             <Logo/>
+            <Footer/>
         </div>
     );
 }
