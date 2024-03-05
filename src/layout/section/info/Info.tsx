@@ -20,7 +20,7 @@ export const Info = () => {
 
 const StyledInfo = styled.section`
     background-color: #b2bbfd;
-    min-height: 100vh;
+    //min-height: 100vh;
 
     border: 1px solid #0606f5;
     display: flex;

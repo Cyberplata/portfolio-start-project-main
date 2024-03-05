@@ -12,8 +12,8 @@ export const Header = () => {
     return (
         <StyledCenterMain>
 
-            <LeftMain/>
-            <RightMain/>
+            {/*<LeftMain/>*/}
+            {/*<RightMain/>*/}
 
             <Container>
                 <FlexWrapper align={"center"} justify={"space-between"}>
@@ -42,7 +42,7 @@ const StyledCenterMain = styled.header`
     display: flex;
     //max-width: 970px;
     //width: 100%;
-    min-height: 100vh;
+    //min-height: 100vh;
     position: relative;
     //z-index: 9999999;
 `
@@ -57,9 +57,13 @@ const StyledCenterMainTitle = styled.h1`
 const StyledCenterMainText = styled.p``
 
 const StyledPhoto = styled.img`
-    width: 325px;
-    height: 460px;
+    max-width: 325px;
+    min-height: 460px;
+    width: auto;
+    height: auto;
     object-fit: cover;
     display: flex;
 `
+
+//Support - для FlexWrapper задать display: grid; grid-template-columns: 1fr 1fr Также для адаптива сделать imgWrapper
 

@@ -58,7 +58,7 @@ export const ContactInformation = () => {
 };
 
 const StyledContactInformation = styled.div`
-    outline: 1px solid #0e0d0d;
+    border: 1px solid #0e0d0d;
 
     max-width: 370px;
     width: 100%;

@@ -32,11 +32,12 @@ export const LeaveUsYourInfo = () => {
 };
 
 const StyledLeaveUsYourInfo = styled.div`
-    outline: 1px solid #0e0d0d;
+    border: 1px solid #0e0d0d;
         // background-color: ${theme.colors.primaryBg};
 
     max-width: 570px;
     width: 100%;
+    padding: 15px;
 `
 
 const Title = styled.h2`

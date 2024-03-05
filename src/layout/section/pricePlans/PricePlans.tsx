@@ -37,7 +37,7 @@ const StyledPricePlans = styled.section`
     display: flex;
     //max-width: 248px;
     //width: 100%;
-    min-height: 100vh;
+    //min-height: 100vh;
 `
 
 /*

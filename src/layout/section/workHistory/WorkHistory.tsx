@@ -27,7 +27,7 @@ export const WorkHistory = () => {
 
 const StyledWorkHistory = styled.section`
     background-color: #f8b2b2;
-    min-height: 100vh;
+    //min-height: 100vh;
     display: flex;
     position: relative;
     //z-index: 99999;

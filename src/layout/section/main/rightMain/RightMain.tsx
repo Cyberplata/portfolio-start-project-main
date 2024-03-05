@@ -57,9 +57,9 @@ const StyledRightMain = styled.aside`
     width: 100%;
     background-color: #dbdfff;
     min-height: 100vh;
-    //padding: 0 20px;
+    padding: 50px 34px;
 
-    position: fixed;
+    position: relative;
     right: 0;
     top: 0;
     z-index: 99;

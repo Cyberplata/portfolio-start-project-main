@@ -12,30 +12,37 @@ import {Portfolio} from "./layout/section/portfolio/Portfolio";
 import {Blog} from "./layout/section/blog/Blog";
 import {Info} from "./layout/section/info/Info";
 import {Map} from "./layout/section/map/Map";
-import { Logo } from './layout/section/logo/Logo';
+import {Logo} from './layout/section/logo/Logo';
 import {Footer} from "./layout/footer/Footer";
-
+import { ContainerLayout } from './components/ContainerLayout';
 
 
 function App() {
     return (
         <div className="App">
-            {/*<LeftMain/>*/}
-            <Header/>
-            {/*<RightMain/>*/}
-            <Services/>
-            <PricePlans/>
-            <Recommendations/>
-            <Education/>
-            <WorkHistory/>
-            <Portfolio/>
-            <Blog/>
-            <Info/>
-            <Map/>
-            <Logo/>
-            <Footer/>
+            <LeftMain/>
+            <ContainerLayout>
+                <Header/>
+                <Services/>
+                <PricePlans/>
+                <Recommendations/>
+                <Education/>
+                <WorkHistory/>
+                <Portfolio/>
+                <Blog/>
+                <Info/>
+                <Map/>
+                <Logo/>
+                <Footer/>
+            </ContainerLayout>
+            <RightMain/>
         </div>
     );
 }
 
 export default App;
+
+// Нужно эти стили задать для класса App
+// display: flex;
+// max-height: 100vh;
+// overflow: hidden;

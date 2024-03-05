@@ -51,13 +51,15 @@ const StyledEducationDetils = styled.div<StyledEducationDetilsPropsType>`
 
 const StyledLeftColumn = styled.div`
     border: 1px solid black;
-    width: 208px;
+    max-width: 208px;
+    width: 100%;
 `
 
 const StyledRightColumn = styled.div`
     border: 1px solid black;
-    width: 536px;
-    margin-left: 180px;
+    max-width: 536px;
+    width: 100%;
+    //margin-left: 180px;
 `
 
 const PlaceOfTraining = styled.h3`

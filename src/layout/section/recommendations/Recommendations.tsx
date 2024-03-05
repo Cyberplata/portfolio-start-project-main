@@ -26,7 +26,7 @@ export const Recommendations = () => {
 
 const StyledRecommendations = styled.section`
     background-color: #e7f8bc;
-    min-height: 100vh;
+    //min-height: 100vh;
 `
 
 /*

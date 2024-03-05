@@ -8,7 +8,7 @@ export const Logo = () => {
     return (
         <StyledLogo>
             <Container>
-                <FlexWrapper justify={"space-between"} wrap={"wrap"}>
+                <FlexWrapper justify={"space-between"} wrap={"wrap"} width={"100%"}>
                     <LogoList>
                         <LogoItem>
                             <LogoLink>
@@ -40,13 +40,17 @@ export const Logo = () => {
 const StyledLogo = styled.div`
     background-color: #b5ffb5;
     min-height: 20vh;
+    //width: 100%;
 `
 
 const LogoList = styled.ul`
     display: flex;
+    //flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 130px;
+    //gap: 130px;
+    width: 100%;
+    flex-wrap: wrap;
 `
 
 const LogoItem = styled.li`

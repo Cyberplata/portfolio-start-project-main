@@ -53,6 +53,7 @@ const ReviewText = styled.p`
 const Image = styled.img`
     width: 80px;
     height: 80px;
+    object-fit: cover;
 `
 
 const Name = styled.h3`

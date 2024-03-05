@@ -46,7 +46,7 @@ export const Services = () => {
 
 const StyledServices = styled.section`
     background-color: #9db0fa;
-    min-height: 100vh;
+    //min-height: 100vh;
     display: flex;
     position: relative;
     //z-index: 99999;

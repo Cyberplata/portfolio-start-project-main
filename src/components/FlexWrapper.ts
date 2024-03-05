@@ -7,6 +7,7 @@ type FlexWrapperPropsType = {
     wrap?: string
     gap?: string
     marginLeft?: string
+    width?: string
 }
 
 export const FlexWrapper = styled.div<FlexWrapperPropsType>`
@@ -16,6 +17,7 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
     align-items: ${props => props.align || "stretch"};
     flex-wrap: ${props => props.wrap || "nowrap"};
     gap: ${props => props.gap};
-    margin-left: ${props => props.marginLeft}
+    margin-left: ${props => props.marginLeft};
+    width: ${props => props.width};
     //height: 100%;  // добавляем 100% от родителя (весь экран сделали). Так как нас не устраивает, что высота было по контент + все элементы по вертикали выровнились по центру
 `

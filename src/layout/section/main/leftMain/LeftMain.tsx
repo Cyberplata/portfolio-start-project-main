@@ -39,14 +39,22 @@ const StyledLeftMenu = styled.aside`
 
     //display: flex;
     //flex-direction: column;
-    max-width: 220px;
+    max-width: 305px;
     width: 100%;
     background-color: #eeffed;
-    /*margin: 50px 45px;*/
+    padding: 50px 45px 25px 40px;
     min-height: 100vh;
 
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     z-index: 99;
+
+
+    // Support
+    //display: none; - при адаптиве
+    max-height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
 `

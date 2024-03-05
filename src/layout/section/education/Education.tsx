@@ -26,7 +26,7 @@ export const Education = () => {
 
 const StyledEducation = styled.section`
     background-color: #be97fc;
-    min-height: 100vh;
+    //min-height: 100vh;
     display: flex;
     position: relative;
     //z-index: 99999;

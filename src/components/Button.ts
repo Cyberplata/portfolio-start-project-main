@@ -12,4 +12,5 @@ export const Button = styled.button`
     letter-spacing: 0%;
     text-align: center;
     text-transform: uppercase;
+    cursor: pointer;
 `
