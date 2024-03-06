@@ -1,7 +1,7 @@
 <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink">
 
-    <!--left portfolioMenu-->
+    <!--left Main-->
     <g id="facebook">
         <desc>
             Created with Pixso.
@@ -176,7 +176,7 @@
     </g>
 
 
-    <!--center portfolioMenu-->
+    <!--Header-->
     <g id="arrow-right-black">
         <desc>
             Created with Pixso.
@@ -194,7 +194,7 @@
         </g>
     </g>
 
-    <!--right portfolioMenu-->
+    <!--right Main-->
     <g id="contrast">
         <desc>
             Created with Pixso.
@@ -225,11 +225,11 @@
                       fill="white" fill-opacity="0"/>
             </clipPath>
         </defs>
-        <circle id="Ellipse 10" cx="20.000000" cy="20.000000" r="20.000000" fill="#FFB400" fill-opacity="1.000000"/>
+        <circle id="Ellipse 10" cx="20.000000" cy="20.000000" r="20.000000" fill="currentColor" fill-opacity="1.000000"/>
         <rect id="Icons/Home" width="18.000000" height="18.000000" transform="translate(11.000000 11.000000)"
               fill="#FFFFFF" fill-opacity="0"/>
         <rect id="Icons/Home" width="18.000000" height="18.000000" transform="translate(11.000000 11.000000)"
-              fill="#FFFFFF" fill-opacity="0"/>
+              fill="#FFB400" fill-opacity="0"/>
         <rect id="Icons/Home" width="18.000000" height="18.000000" transform="translate(11.000000 11.000000)"
               fill="#FFFFFF" fill-opacity="0"/>
         <rect id="Icons/Home" width="18.000000" height="18.000000" transform="translate(11.000000 11.000000)"
@@ -237,7 +237,7 @@
         <g clip-path="url(#clip1_250)">
             <path id="Vector"
                   d="M25.9999 26C25.9999 26.1987 25.9208 26.3896 25.7802 26.5303C25.6395 26.6709 25.4488 26.75 25.2499 26.75L14.7499 26.75C14.551 26.75 14.3602 26.6709 14.2195 26.5303C14.0789 26.3896 13.9999 26.1987 13.9999 26L13.9999 19.25L11.7499 19.25L19.4951 12.209C19.6332 12.0835 19.8132 12.0137 19.9999 12.0137C20.1866 12.0137 20.3665 12.0835 20.5046 12.209L28.2499 19.25L25.9999 19.25L25.9999 26Z"
-                  fill="#2B2B2B" fill-opacity="1.000000" fill-rule="nonzero"/>
+                  fill="#767676" fill-opacity="1.000000" fill-rule="nonzero"/>
         </g>
     </g>
 
@@ -255,7 +255,7 @@
                       transform="translate(11.000000 11.000000)" fill="white" fill-opacity="0"/>
             </clipPath>
         </defs>
-        <circle id="Ellipse 10" cx="20.000000" cy="20.000000" r="20.000000" fill="#F0F0F6" fill-opacity="1.000000"/>
+        <circle id="Ellipse 10" cx="20.000000" cy="20.000000" r="20.000000" fill="currentColor" fill-opacity="1.000000"/>
         <rect id="Icons/Services" width="18.000000" height="18.000000" transform="translate(11.000000 11.000000)"
               fill="#FFFFFF" fill-opacity="0"/>
         <rect id="Icons/Services" width="18.000000" height="18.000000" transform="translate(11.000000 11.000000)"
@@ -281,7 +281,7 @@
                       fill="white" fill-opacity="0"/>
             </clipPath>
         </defs>
-        <circle id="Ellipse 11" cx="20.000000" cy="20.000000" r="20.000000" fill="#F0F0F6" fill-opacity="1.000000"/>
+        <circle id="Ellipse 11" cx="20.000000" cy="20.000000" r="20.000000" fill="currentColor" fill-opacity="1.000000"/>
         <rect id="Icons/cv" width="18.000000" height="18.000000" transform="translate(11.000000 11.000000)"
               fill="#FFFFFF" fill-opacity="0"/>
         <rect id="Icons/cv" width="18.000000" height="18.000000" transform="translate(11.000000 11.000000)"
@@ -305,7 +305,7 @@
                       transform="translate(11.000000 11.000000)" fill="white" fill-opacity="0"/>
             </clipPath>
         </defs>
-        <circle id="Ellipse 12" cx="20.000000" cy="20.000000" r="20.000000" fill="#F0F0F6" fill-opacity="1.000000"/>
+        <circle id="Ellipse 12" cx="20.000000" cy="20.000000" r="20.000000" fill="currentColor" fill-opacity="1.000000"/>
         <rect id="Icons/Portfolio" width="18.000000" height="18.000000" transform="translate(11.000000 11.000000)"
               fill="#FFFFFF" fill-opacity="0"/>
         <rect id="Icons/Portfolio" width="18.000000" height="18.000000" transform="translate(11.000000 11.000000)"
@@ -331,7 +331,7 @@
                       fill="white" fill-opacity="0"/>
             </clipPath>
         </defs>
-        <circle id="Ellipse 11" cx="20.000000" cy="20.000000" r="20.000000" fill="#F0F0F6" fill-opacity="1.000000"/>
+        <circle id="Ellipse 11" cx="20.000000" cy="20.000000" r="20.000000" fill="currentColor" fill-opacity="1.000000"/>
         <rect id="Icons/Blog" width="18.000000" height="18.000000" transform="translate(11.000000 11.000000)"
               fill="#FFFFFF" fill-opacity="0"/>
         <rect id="Icons/Blog" width="18.000000" height="18.000000" transform="translate(11.000000 11.000000)"
@@ -357,7 +357,7 @@
                       fill="white" fill-opacity="0"/>
             </clipPath>
         </defs>
-        <circle id="Ellipse 14" cx="20.000000" cy="20.000000" r="20.000000" fill="#F0F0F6" fill-opacity="1.000000"/>
+        <circle id="Ellipse 14" cx="20.000000" cy="20.000000" r="20.000000" fill="currentColor" fill-opacity="1.000000"/>
         <rect id="Icons/Contact" width="18.000000" height="18.000000" transform="translate(11.000000 11.000000)"
               fill="#FFFFFF" fill-opacity="0"/>
         <rect id="Icons/Contact" width="18.000000" height="18.000000" transform="translate(11.000000 11.000000)"

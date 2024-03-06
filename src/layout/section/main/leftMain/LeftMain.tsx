@@ -48,7 +48,7 @@ const StyledLeftMenu = styled.aside`
     position: relative;
     top: 0;
     left: 0;
-    z-index: 99;
+    z-index: 999999;
 
 
     // Support

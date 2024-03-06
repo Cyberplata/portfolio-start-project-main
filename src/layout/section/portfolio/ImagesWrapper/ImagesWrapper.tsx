@@ -26,18 +26,19 @@ import CreateMedia from "../../../../assets/images/jpg/Good/portfolioImg/Portfol
 export const ImagesWrapper = () => {
     return (
         <StyledImagesWrapper>
-            <img src={HowToMakeWebTemplates} alt=""/>
-            <img src={MakeBusinessCard} alt=""/>
-            <img src={Design} alt=""/>
-            <img src={Pizza} alt=""/>
-            <img src={Mockup} alt=""/>
-            <img src={YourName} alt=""/>
-            <img src={MockupPlace} alt=""/>
-            <img src={WeMakeBussiness} alt=""/>
-            <img src={CreateMedia} alt=""/>
+            <Photo src={HowToMakeWebTemplates} alt=""/>
+            <Photo src={MakeBusinessCard} alt=""/>
+            <Photo src={Design} alt=""/>
+            <Photo src={Pizza} alt=""/>
+            <Photo src={Mockup} alt=""/>
+            <Photo src={YourName} alt=""/>
+            <Photo src={MockupPlace} alt=""/>
+            <Photo src={WeMakeBussiness} alt=""/>
+            <Photo src={CreateMedia} alt=""/>
         </StyledImagesWrapper>
     );
 };
+
 
 const StyledImagesWrapper = styled.div`
     width: 100%;
@@ -51,6 +52,11 @@ const StyledImagesWrapper = styled.div`
         height: 100%;
         object-fit: cover;
         aspect-ratio: 16 / 9;
+        
+        //margin: 50px 0 70px;
     }
+`
 
+const Photo = styled.img`
+    
 `

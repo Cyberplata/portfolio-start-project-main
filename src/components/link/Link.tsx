@@ -12,6 +12,7 @@ type LinkPropsType = {
     justify?: string
     align?: string
     gap?: string
+    fill?: string
 }
 
 export const Link = styled.a<LinkPropsType>`
@@ -26,4 +27,5 @@ export const Link = styled.a<LinkPropsType>`
     justify-content: ${props => props.justify || "center"};
     align-items: ${props => props.align || "center"};
     gap: ${props => props.gap || "20px"};
+    fill: ${props => props.fill};
 `

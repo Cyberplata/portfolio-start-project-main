@@ -5,15 +5,11 @@ import {Link} from "../../components/link/Link";
 import photo from "../../assets/images/jpg/Good/ProfileMain.webp"
 import {Container} from "../../components/Container";
 import {Icon} from "../../components/icon/Icon";
-import {LeftMain} from "../section/main/leftMain/LeftMain";
-import {RightMain} from "../section/main/rightMain/RightMain";
+
 
 export const Header = () => {
     return (
-        <StyledCenterMain>
-
-            {/*<LeftMain/>*/}
-            {/*<RightMain/>*/}
+        <StyledHeader>
 
             <Container>
                 <FlexWrapper align={"center"} justify={"space-between"}>
@@ -32,11 +28,11 @@ export const Header = () => {
                     <StyledPhoto src={photo}/>
                 </FlexWrapper>
             </Container>
-        </StyledCenterMain>
+        </StyledHeader>
     );
 };
 
-const StyledCenterMain = styled.header`
+const StyledHeader = styled.header`
     border: 1px solid #0606f5;
     background-color: #ffe4b4;
     display: flex;

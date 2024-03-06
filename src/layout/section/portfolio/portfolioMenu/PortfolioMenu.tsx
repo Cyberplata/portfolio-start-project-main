@@ -28,6 +28,7 @@ export const PortfolioMenu = (props: { menuItems: Array<string> }) => {
 
 const StyledPortfolioMenu = styled.nav`
     outline: 1px solid #0e0d0d;
+    margin-bottom: 50px;
     
     ul {
         display: flex;

@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
 import {Icon} from "../../../../components/icon/Icon";
-// import {Container} from "../../../../components/Container";
 import {FlexWrapper} from "../../../../components/FlexWrapper";
 import {Link} from "../../../../components/link/Link";
 import {LogoSvg} from "../../../../components/logoSvg/LogoSvg";
@@ -17,32 +16,32 @@ export const RightMain = () => {
 
                     <MainList>
                         <MainItem>
-                            <Link backgroundColor={"none"} color={"red"}>
+                            <Link color={"#FFFFFF"} backgroundColor={"none"}>
                                 <Icon height={"40px"} width={"40px"} viewBox={"0 0 40 40"} iconId={"home"}/>
                             </Link>
                         </MainItem>
                         <MainItem>
-                            <Link backgroundColor={"none"}>
+                            <Link color={"#FFFFFF"} backgroundColor={"none"}>
                                 <Icon height={"40px"} width={"40px"} viewBox={"0 0 40 40"} iconId={"service"}/>
                             </Link>
                         </MainItem>
                         <MainItem>
-                            <Link backgroundColor={"none"}>
+                            <Link color={"#FFFFFF"} backgroundColor={"none"}>
                                 <Icon height={"40px"} width={"40px"} viewBox={"0 0 40 40"} iconId={"сv"}/>
                             </Link>
                         </MainItem>
                         <MainItem>
-                            <Link backgroundColor={"none"}>
+                            <Link color={"#FFFFFF"} backgroundColor={"none"}>
                                 <Icon height={"40px"} width={"40px"} viewBox={"0 0 40 40"} iconId={"portfolio"}/>
                             </Link>
                         </MainItem>
                         <MainItem>
-                            <Link backgroundColor={"none"}>
+                            <Link color={"#FFFFFF"} backgroundColor={"none"}>
                                 <Icon height={"40px"} width={"40px"} viewBox={"0 0 40 40"} iconId={"blog"}/>
                             </Link>
                         </MainItem>
                         <MainItem>
-                            <Link backgroundColor={"none"}>
+                            <Link color={"#FFFFFF"} backgroundColor={"none"}>
                                 <Icon height={"40px"} width={"40px"} viewBox={"0 0 40 40"} iconId={"contact"}/>
                             </Link>
                         </MainItem>
@@ -62,7 +61,7 @@ const StyledRightMain = styled.aside`
     position: relative;
     right: 0;
     top: 0;
-    z-index: 99;
+    z-index: 999999;
 `
 
 const MainList = styled.ul`
@@ -77,12 +76,22 @@ const MainList = styled.ul`
 const MainItem = styled.li`
 
     //:not[iconId={"home"}]
+    ${Link} {
+        //fill: green;
+        //color: red;
+        //background-color: #fff;
+        // color: ${theme.colors.accent};
+        //fill: red;
+        //stroke: black;
+    }
     
     ${Link}:hover {
-        fill: currentColor;
-        stroke: currentColor;
+        //fill: green;
+        //stroke: red;
         color: ${theme.colors.accent};
-        background-color: ${theme.colors.accent};
+         //fill: currentColor;
+         //stroke: currentColor;
+        // background-color: ${theme.colors.accent};
         
         /*position: absolute;
         //content: attr(data-title);
@@ -92,6 +101,6 @@ const MainItem = styled.li`
     }
 `
 
-// const MainLink = styled.a`
+// const RightLink = styled.a`
 //
 // `
