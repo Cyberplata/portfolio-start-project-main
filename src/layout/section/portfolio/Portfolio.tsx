@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import {Container} from "../../../components/Container";
 import {SectionTitle} from "../../../components/SectionTitle";
-import {Menu} from "../../../components/menu/Menu";
+import {PortfolioMenu} from "./portfolioMenu/PortfolioMenu";
 import {ImagesWrapper} from "./ImagesWrapper/ImagesWrapper";
 /*import HowToMakeWebTemplates from "../../../assets/images/jpg/Good/portfolioImg/Blog-Portfolio-HowToMakeWebTemplates.webp"
 import MakeBusinessCard from "../../../assets/images/jpg/Good/portfolioImg/Blog-MakeBusinessCard.webp"
@@ -23,7 +23,7 @@ export const Portfolio = () => {
 
                 <SectionTitle textTitle={"Portfolio"} textDiscription={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum"}/>
 
-                <Menu menuItems={portfolioItems}/>
+                <PortfolioMenu menuItems={portfolioItems}/>
 
                 <ImagesWrapper/>
 

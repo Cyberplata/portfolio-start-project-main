@@ -29,7 +29,7 @@ export const Map = () => {
 const StyledMap = styled.div`
     //border: 1px solid blue;
     background-color: #d0acad;
-    min-height: 50vh;
+    min-height: 35vh;
 `
 
 

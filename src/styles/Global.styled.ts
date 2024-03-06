@@ -19,6 +19,7 @@ export const GlobalStyle = createGlobalStyle`
         -moz-osx-font-smoothing: grayscale;
         color: ${theme.colors.font};
         // background-color: ${theme.colors.secondaryBg};
+        line-height: 1.2;
     }
 
     a {
@@ -41,4 +42,14 @@ export const GlobalStyle = createGlobalStyle`
     section:not(:first-child) {
         background-color: ${theme.colors.secondaryBg};
     }*/
+
+    .App {
+        display: flex;
+        max-height: 100vh;
+        overflow: hidden;
+    }
+
+    #root {
+        height: 100%;
+    }
 `
