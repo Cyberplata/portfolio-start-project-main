@@ -4,25 +4,23 @@ import {About} from "./about/About";
 import {Languages} from "./languages/Languages";
 import {Skills} from "./skills/Skills";
 import {ExtraSkills} from "./extraskills/ExtraSkills";
-import {Link} from "../../../../components/link/Link";
+import {Link, LinkText} from "../../../../components/link/Link";
 import {FlexWrapper} from "../../../../components/FlexWrapper";
 import {Profile} from "./profile/Profile";
 import {Icon} from "../../../../components/icon/Icon";
-import {Container} from "../../../../components/Container";
-// import {Container} from "../../../../components/Container";
 
 export const LeftMain = () => {
     return (
         <StyledLeftMenu>
-                <FlexWrapper direction={"column"} justify={"space-between"} gap={"25px"}>
+                <FlexWrapper direction={"column"} justify={"space-between"} gap={"50px"}>
                     <Profile/>
                     <About/>
                     <Languages/>
                     <Skills/>
                     <ExtraSkills/>
 
-                    <Link width={"220px"} height={"40px"}>
-                        Download cv
+                    <Link width={"220px"} height={"40px"} fontWeight={"600"}>
+                        <LinkText>Download cv</LinkText>
                         <Icon iconId={"vector-arrow-down"}
                               width={"14px"}
                               height={"16px"}
@@ -41,7 +39,7 @@ const StyledLeftMenu = styled.aside`
     //flex-direction: column;
     max-width: 305px;
     width: 100%;
-    background-color: #eeffed;
+    background-color: #e5fce5;
     padding: 50px 45px 25px 40px;
     min-height: 100vh;
 

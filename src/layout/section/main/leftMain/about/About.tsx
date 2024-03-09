@@ -1,37 +1,106 @@
 import React from 'react';
 import styled from "styled-components";
 import {FlexWrapper} from "../../../../../components/FlexWrapper";
+import {theme} from "../../../../../styles/Theme";
 
 export const About = () => {
     return (
         <StyledAbout>
-            <FlexWrapper direction={"column"} justify={"space-between"}>
+            <FlexWrapper direction={"column"} justify={"space-between"} gap={"10px"}>
                 <AboutContent>
-                    <span>Age:</span>
-                    <span>24</span>
+                    <LeftColumn width={"46px"} height={"24px"}>Age:</LeftColumn>
+                    <RightColumn>24</RightColumn>
                 </AboutContent>
                 <AboutContent>
-                    <span>Residence:</span>
-                    <span>BD</span>
+                    <LeftColumn width={"89px"} height={"24px"}>Residence:</LeftColumn>
+                    <RightColumn>BD</RightColumn>
                 </AboutContent>
                 <AboutContent>
-                    <span>Freelance:</span>
-                    <span>Available</span>
+                    <LeftColumn width={"85px"} height={"24px"}>Freelance:</LeftColumn>
+                    <RightColumn><span>Available</span></RightColumn>
                 </AboutContent>
                 <AboutContent>
-                    <span>Address:</span>
-                    <span>Dhaka,Bangladesh</span>
+                    <LeftColumn width={"75px"} height={"24px"}>Address:</LeftColumn>
+                    <RightColumn>Dhaka,Bangladesh</RightColumn>
                 </AboutContent>
             </FlexWrapper>
+            <Line></Line>
         </StyledAbout>
     );
 };
 
+const Line = styled.div``
+
 const StyledAbout = styled.div`
-    border: 1px solid #0e0d0d;
+    outline: 1px solid #0e0d0d;
+
+    ${Line} {
+        position: relative;
+        z-index: 0;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 100%;
+            height: 0;
+            border: 1.5px solid ${theme.colors.secondaryBg};
+
+            position: absolute;
+            bottom: -24px;
+            z-index: -1;
+        }
 `
 
 const AboutContent = styled.div`
     display: flex;
     justify-content: space-between;
+`
+
+type LeftColumnPropsType = {
+    width?: string
+    height?: string
+}
+
+const LeftColumn = styled.span<LeftColumnPropsType>`
+    color: ${theme.colors.font};
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    //letter-spacing: 0%;
+    //text-align: left;
+    text-transform: capitalize;
+    
+    padding-left: 5px;
+    //overflow: hidden;
+    
+    position: relative;
+    z-index: 0;
+    
+    &::before {
+        content: "";
+        display: inline-block;
+        width: ${props => props.width};
+        height: ${props => props.height};
+        background-color: ${theme.colors.accent};
+        
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        bottom: 0;
+        //overflow: hidden;
+    }
+`
+
+const RightColumn = styled.span`
+    color: ${theme.colors.font};
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    //letter-spacing: 0%;
+    //text-align: left;
+    text-transform: capitalize;
+    
+    span {
+        color: #7EB942;
+    }
 `

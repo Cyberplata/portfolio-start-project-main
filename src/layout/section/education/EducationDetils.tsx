@@ -16,22 +16,16 @@ export const EducationDetils = (props: EducationDetilsPropsType) => {
         <StyledEducationDetils >
             <FlexWrapper wrap={"wrap"} justify={"space-between"}>
 
-{/*                <FlexWrapper wrap={"wrap"} direction={"column"}>*/}
                 <StyledLeftColumn>
                     <PlaceOfTraining>{props.textPlace}</PlaceOfTraining>
                     <Role>{props.textRole}</Role>
                     <PeriodTraining>{props.textPeriod}</PeriodTraining>
                 </StyledLeftColumn>
 
-{/*                </FlexWrapper>*/}
-{/*                <FlexWrapper wrap={"wrap"} direction={"column"} marginLeft={"180px"}>*/}
-
                 <StyledRightColumn>
                     <Certificate>{props.textCertificate}</Certificate>
                     <CertificateDiscription>{props.textCertDiscription}</CertificateDiscription>
                 </StyledRightColumn>
-
-{/*                </FlexWrapper>*/}
 
             </FlexWrapper>
         </StyledEducationDetils>

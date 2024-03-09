@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {theme} from "../../styles/Theme";
 
 
 type LinkPropsType = {
@@ -8,12 +9,19 @@ type LinkPropsType = {
     backgroundColor?: string
     color?: string
     boxShadow?: string
-    // displayFlex?: string
+    display?: string
     justify?: string
     align?: string
     gap?: string
     fill?: string
+
+    fontSize?: string
+    fontWeight?: string
+    lineHeight?: string
+    textTransform?: string;
 }
+
+export const LinkText = styled.span``
 
 export const Link = styled.a<LinkPropsType>`
     width: ${props => props.width};
@@ -23,9 +31,18 @@ export const Link = styled.a<LinkPropsType>`
     color: ${props => props.color || "none"};
     box-shadow: ${props => props.boxShadow || "none"};
     cursor: pointer;
-    display: flex;
+    display: ${props => props.display || "flex"};
     justify-content: ${props => props.justify || "center"};
     align-items: ${props => props.align || "center"};
     gap: ${props => props.gap || "20px"};
     fill: ${props => props.fill};
+
+    ${LinkText} {
+        color: ${props => props.color || theme.colors.font};
+        font-size: ${props => props.fontSize || "14px"};
+        font-weight: ${props => props.fontWeight || "500"};
+        line-height: ${props => props.lineHeight || "17px"};
+        text-transform: ${props => props.textTransform || "uppercase"};
+    }
 `
+

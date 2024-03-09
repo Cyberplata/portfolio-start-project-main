@@ -33,9 +33,7 @@ export const Services = () => {
                     <Service iconId={"photographer"}
                              title={"photography"}
                              description={"portrait, product photography"}/>
-                    {/*<Service title={"advertising"}
-                             description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi."}
-                             iconId={"right-arrow"}/>*/}
+
                     <ServiceAdvertising title={"advertising"}
                              description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi."}/>
                 </FlexWrapper>

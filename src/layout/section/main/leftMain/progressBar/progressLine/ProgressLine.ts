@@ -5,11 +5,13 @@ type ProgressLinePropsType = {
     backgroundColor?: string
     width?: string
     height?: string
+    gap?: string
 }
 
 export const ProgressLine = styled.div<ProgressLinePropsType>`
-    border-radius: 30px;
     background-color: ${props => props.backgroundColor || theme.colors.primaryBg};
     height: ${props => props.height || "2px"};
-    width: ${props => props.width || "100%"};
+    width: ${props => props.width};
+    gap: ${props => props.gap};
+    border-radius: 30px;
 `

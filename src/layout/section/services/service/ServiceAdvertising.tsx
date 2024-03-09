@@ -26,7 +26,6 @@ export const ServiceAdvertising = (props: ServicePropsType) => {
                     <Icon width={"20px"} height={"20px"} viewBox={"0 0 20 20"} iconId={"right-arrow"}/>
                 </Link>
 
-                {/*<Icon iconId={props.iconId}/>*/}
             </FlexWrapper>
         </StyledServiceAdvertising>
     );
