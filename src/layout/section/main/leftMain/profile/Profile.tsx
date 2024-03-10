@@ -5,6 +5,8 @@ import styled from "styled-components";
 import {FlexWrapper} from "../../../../../components/FlexWrapper";
 import {Link} from "../../../../../components/link/Link";
 import {theme} from "../../../../../styles/Theme";
+import available from "../../../../../assets/images/svg/leftMenu-svg/Available.svg";
+
 
 export const Profile = () => {
     return (
@@ -72,6 +74,11 @@ const StyledProfile = styled.div`
             z-index: -1;
         }
     }
+
+
+    background-image: url(${available});
+    background-repeat: no-repeat;
+    background-position: 158px 116px;
     
 `
 
@@ -82,6 +89,10 @@ const Photo = styled.img`
     max-height: 150px;
     object-fit: cover;
     border-radius: 50%;
+
+    // background-image: url(${available});
+    // background-repeat: no-repeat;
+    // background-position: 205px 116px;
 `
 
 const LeftMenuTitle = styled.h3`

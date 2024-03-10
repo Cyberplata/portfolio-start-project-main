@@ -30,21 +30,37 @@ export const Dimond = () => {
 };
 
 const StyledPricePlanSilver = styled.div`
-    border: 1px solid black;
+    outline: 1px solid black;
     background-color: ${theme.colors.primaryBg};
     max-width: 310px;
     width: 100%;
-    //margin: 100px 20px 70px;
+    padding: 54px 30px 25px;
+
+    ${Link} {
+        color: ${theme.colors.font};
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        text-transform: capitalize;
+    }
+
+    ${Link}:hover {
+        background-color: ${theme.colors.accent};
+    }
 `
 
 const PricePlanTitle = styled.h3`
-
+    color: ${theme.colors.font};
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
 `
 
-/*const PricePlanTotal = styled.p`
-    margin: 20px 0 8px;
-`*/
-
 const PricePlanTotalText = styled.p`
-    
+    color: ${theme.colors.fontDiscription};
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: capitalize;
+    text-align: center;
 `

@@ -41,7 +41,7 @@ export const Header = () => {
 
 const StyledHeader = styled.header`
     outline: 1px solid #0606f5;
-    background-color: #ffe4b4;
+    //background-color: #ffe4b4;
     display: flex;
 
     //position: relative;

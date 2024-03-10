@@ -9,9 +9,10 @@ import {FlexWrapper} from "../../../../components/FlexWrapper";
 import {Profile} from "./profile/Profile";
 import {Icon} from "../../../../components/icon/Icon";
 
+
 export const LeftMain = () => {
     return (
-        <StyledLeftMenu>
+        <StyledLeftMain>
                 <FlexWrapper direction={"column"} justify={"space-between"} gap={"50px"}>
                     <Profile/>
                     <About/>
@@ -28,18 +29,19 @@ export const LeftMain = () => {
                     </Link>
 
                 </FlexWrapper>
-        </StyledLeftMenu>
+        </StyledLeftMain>
     );
 };
 
-const StyledLeftMenu = styled.aside`
+const StyledLeftMain = styled.aside`
+    background-color: #FFFFFF;
     border: 1px solid mediumvioletred;
 
     //display: flex;
     //flex-direction: column;
     max-width: 305px;
     width: 100%;
-    background-color: #e5fce5;
+    //background-color: #e5fce5;
     padding: 50px 45px 25px 40px;
     min-height: 100vh;
 
@@ -55,4 +57,8 @@ const StyledLeftMenu = styled.aside`
     overflow-y: scroll;
     overflow-x: hidden;
     scrollbar-width: none;
+
+    
+    
+    
 `

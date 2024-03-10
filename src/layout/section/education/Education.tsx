@@ -25,13 +25,13 @@ export const Education = () => {
 };
 
 const StyledEducation = styled.section`
-    background-color: #be97fc;
+    //background-color: #be97fc;
     //min-height: 100vh;
     display: flex;
     position: relative;
     //z-index: 99999;
 
-    border: 1px solid #0606f5;
+    outline: 1px solid #0606f5;
 `
 
 const StyledCenterBox = styled.div`

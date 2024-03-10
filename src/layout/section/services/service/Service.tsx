@@ -26,21 +26,30 @@ export const Service = (props: ServicePropsType) => {
 };
 
 const StyledService = styled.div`
-    border: 1px solid #0e0d0d;
+    outline: 1px solid #0e0d0d;
     
     background-color: ${theme.colors.primaryBg};
     width: 310px;
-    padding: 62px 20px 40px;
+    padding: 28px 76px 42px;
     flex-grow: 1;
     //position: relative;
 
 `
 
 const ServiceTitle = styled.h3`
-    margin: 26px 0 15px;
+    color: ${theme.colors.font};
+    font-size: 18px;
+    font-weight: 500;
     text-transform: capitalize;
+    
+    padding: 26px 0 15px;
 `
 
 const ServiceText = styled.p`
+    color: ${theme.colors.fontDiscription};
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: capitalize;
     text-align: center;
 `

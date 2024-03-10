@@ -22,22 +22,17 @@ export const SectionTitle = (props: SectionTitlePropsType) => {
 
 
 const StyledSectionTitle = styled.h2`
-    font-family: 'Inter', sans-serif;
     font-size: 32px;
     font-weight: 700;
-    //line-height: 123.6%;
-    //letter-spacing: 0%;
     text-align: center;
     text-transform: capitalize;
 `
 
 const StyledSectionDiscription = styled.h2`
     color: ${theme.colors.fontDiscription};
-    font-family: 'Inter', sans-serif;
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
-    //letter-spacing: 0%;
     text-align: center;
     text-transform: capitalize;
 

@@ -34,6 +34,6 @@ export const Blog = () => {
 };
 
 const StyledBlog = styled.section`
-    background-color: #aff8b2;
+    //background-color: #aff8b2;
     //min-height: 100vh;
 `

@@ -6,10 +6,10 @@ type ContainerPropsType = {
 }
 
 export const Container = styled.div<ContainerPropsType>`
-    max-width: 1026px;
+    max-width: 1030px;
     width: 100%;
     min-height: 100%;
     padding: ${props => props.paddingPortfolio || "0 28px"};
     margin: 0 auto;
-    border: 1px solid red;
+    outline: 1px solid red;
 `

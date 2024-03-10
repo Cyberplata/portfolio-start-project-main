@@ -37,10 +37,11 @@ export const Logo = () => {
     );
 };
 
-const StyledLogo = styled.div`
-    background-color: #b5ffb5;
-    min-height: 20vh;
+const StyledLogo = styled.section`
+    //background-color: #b5ffb5;
+    //min-height: 20vh;
     //width: 100%;
+    display: flex;
 `
 
 const LogoList = styled.ul`

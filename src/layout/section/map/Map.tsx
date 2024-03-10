@@ -26,10 +26,11 @@ export const Map = () => {
     );
 };
 
-const StyledMap = styled.div`
+const StyledMap = styled.section`
     //border: 1px solid blue;
-    background-color: #d0acad;
-    min-height: 35vh;
+    //background-color: #d0acad;
+    //min-height: 35vh;
+    display: flex;
 `
 
 

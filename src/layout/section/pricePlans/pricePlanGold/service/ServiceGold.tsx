@@ -10,54 +10,38 @@ import {Icon} from "../../../../../components/icon/Icon";
 export const ServiceGold = () => {
     return (
         <StyledServiceGold>
-            <FlexWrapper direction={"column"}>
+            <FlexWrapper direction={"column"} gap={"16px"}>
                 <ServiceSection>
-                    <a href="#">
-                        <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"check"}/>
-                    </a>
-                    <span>UI Design</span>
+                    <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"check"}/>
+                    <ServiceName>UI Design</ServiceName>
                 </ServiceSection>
                 <ServiceSection>
-                    <a href="#">
-                        <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"check"}/>
-                    </a>
-                    <span>web development</span>
+                    <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"check"}/>
+                    <ServiceName>web development</ServiceName>
                 </ServiceSection>
                 <ServiceSection>
-                    <a href="#">
-                        <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"check"}/>
-                    </a>
-                    <span>logo design</span>
+                    <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"check"}/>
+                    <ServiceName>logo design</ServiceName>
                 </ServiceSection>
                 <ServiceSection>
-                    <a href="#">
-                        <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"check"}/>
-                    </a>
-                    <span>seo optimization</span>
+                    <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"check"}/>
+                    <ServiceName>seo optimization</ServiceName>
                 </ServiceSection>
                 <ServiceSection>
-                    <a href="#">
-                        <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"cross"}/>
-                    </a>
-                    <span>wordPress integration</span>
+                    <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"cross"}/>
+                    <ServiceName>wordPress integration</ServiceName>
                 </ServiceSection>
                 <ServiceSection>
-                    <a href="#">
-                        <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"cross"}/>
-                    </a>
-                    <span>5 Websites</span>
+                    <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"cross"}/>
+                    <ServiceName>5 Websites</ServiceName>
                 </ServiceSection>
                 <ServiceSection>
-                    <a href="#">
-                        <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"cross"}/>
-                    </a>
-                    <span>unlimited user</span>
+                    <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"cross"}/>
+                    <ServiceName>unlimited user</ServiceName>
                 </ServiceSection>
                 <ServiceSection>
-                    <a href="#">
-                        <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"cross"}/>
-                    </a>
-                    <span>20 gB bandwith</span>
+                    <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"cross"}/>
+                    <ServiceName>20 gB bandwith</ServiceName>
                 </ServiceSection>
             </FlexWrapper>
         </StyledServiceGold>
@@ -66,11 +50,13 @@ export const ServiceGold = () => {
 
 const StyledServiceGold = styled.div`
     outline: 1px solid #0e0d0d;
-    margin: 20px 0 20px;
+    margin: 20px 0 32px;
+    width: 100%;
 `
 
 const ServiceSection = styled.div`
     display: flex;
-    //justify-content: space-between;
     gap: 14px;
 `
+
+const ServiceName = styled.span``

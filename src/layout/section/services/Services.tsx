@@ -10,14 +10,10 @@ export const Services = () => {
     return (
         <StyledServices>
             <Container>
-                {/*<SectionTitle>my services</SectionTitle>*/}
-                {/*<FlexWrapper justify={"center"} align={"center"}>*/}
-                {/*    <StyledServicesDescription>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum</StyledServicesDescription>*/}
-                {/*</FlexWrapper>*/}
 
                 <SectionTitle textTitle={"my services"} textDiscription={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum"}/>
 
-                <FlexWrapper wrap={"wrap"} justify={"space-between"}>
+                <FlexWrapper wrap={"wrap"} justify={"space-between"} gap={"20px"}>
                     <Service iconId={"my-services-coding"}
                              title={"web development"}
                              description={"blog, e-commerce"}/>
@@ -43,23 +39,13 @@ export const Services = () => {
 };
 
 const StyledServices = styled.section`
-    background-color: #9db0fa;
+    //background-color: #9db0fa;
     //min-height: 100vh;
     display: flex;
     position: relative;
     //z-index: 99999;
 
-    border: 1px solid #0606f5;
+    padding-top: 130px;
+
+    outline: 1px solid #0606f5;
 `
-
-/*
-const StyledServicesDescription = styled.p`
-    max-width: 438px;
-    width: 100%;
-    margin: 25px 0 50px;
-    text-align: center;
-
-    //display: flex;
-    //justify-content: center;
-    //align-items: center;
-`*/

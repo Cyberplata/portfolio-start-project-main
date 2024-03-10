@@ -33,7 +33,7 @@ export const Portfolio = () => {
 };
 
 const StyledPortfolio = styled.section`
-    background-color: #fffabe;
+    //background-color: #fffabe;
     //min-height: 100vh;
     //display: flex;
     //position: relative;

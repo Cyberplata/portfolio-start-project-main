@@ -8,11 +8,6 @@ import {Slider} from "../../../components/slider/Slider";
 export const Recommendations = () => {
     return (
         <StyledRecommendations>
-            {/*<SectionTitle>recommendations</SectionTitle>*/}
-            {/*<FlexWrapper justify={"center"}>*/}
-            {/*    <RecommendationsDescription>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.*/}
-            {/*        Velit officia consequat duis enim velit mollit. lorem ipsum</RecommendationsDescription>*/}
-            {/*</FlexWrapper>*/}
 
             <SectionTitle textTitle={"recommendations"} textDiscription={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum"}/>
 
@@ -25,7 +20,7 @@ export const Recommendations = () => {
 };
 
 const StyledRecommendations = styled.section`
-    background-color: #e7f8bc;
+    //background-color: #e7f8bc;
     //min-height: 100vh;
 `
 
