@@ -20,17 +20,5 @@ export const Recommendations = () => {
 };
 
 const StyledRecommendations = styled.section`
-    //background-color: #e7f8bc;
-    //min-height: 100vh;
+    
 `
-
-/*
-const RecommendationsDescription = styled.p`
-    max-width: 438px;
-    width: 100%;
-    margin: 25px 0 50px;
-    text-align: center;
-    //display: flex;
-    //justify-content: center;
-    //align-items: center;
-`*/

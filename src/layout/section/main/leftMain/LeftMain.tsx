@@ -8,6 +8,7 @@ import {Link, LinkText} from "../../../../components/link/Link";
 import {FlexWrapper} from "../../../../components/FlexWrapper";
 import {Profile} from "./profile/Profile";
 import {Icon} from "../../../../components/icon/Icon";
+import {theme} from "../../../../styles/Theme";
 
 
 export const LeftMain = () => {
@@ -57,6 +58,28 @@ const StyledLeftMain = styled.aside`
     overflow-y: scroll;
     overflow-x: hidden;
     scrollbar-width: none;
+    
+    &:hover {
+        scrollbar-width: inherit;
+        
+        /* Стили для скролла */
+        &::-webkit-scrollbar {
+            width: 8px; /* Ширина скроллбара */
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: ${theme.colors.accent}; /* Цвет скроллбара */
+            border-radius: 4px; /* Радиус скроллбара */
+        }
+
+        &::-webkit-scrollbar-button:start:decrement {
+            background-color: ${theme.colors.fontDiscription}; /* Цвет стрелки вверх */
+        }
+
+        &::-webkit-scrollbar-button:end:increment {
+            background-color: ${theme.colors.fontDiscription}; /* Цвет стрелки вниз */
+        }
+    }
 
     
     
