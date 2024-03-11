@@ -26,13 +26,8 @@ export const WorkHistory = () => {
 };
 
 const StyledWorkHistory = styled.section`
-    background-color: #f8b2b2;
-    //min-height: 100vh;
     display: flex;
     position: relative;
-    //z-index: 99999;
-
-    border: 1px solid #0606f5;
 `
 
 const StyledCenterBox = styled.div`

@@ -33,7 +33,7 @@ export const Slider = () => {
 
 const StyledSlider = styled.div`
     background-color: #fff;
-    outline: 1px solid #0b0bfd;
+    //outline: 1px solid #0b0bfd;
     //display: flex;
     //flex-direction: column;
     //align-items: center;
@@ -53,7 +53,10 @@ const Pagination = styled.div`
         width: 10px;
         height: 10px;
         border-radius: 10px;
-        margin: 10px;
         background-color: ${theme.colors.accent};
+        
+        & + span {
+            margin-left: 10px;
+        }
     }
 `

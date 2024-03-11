@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {FlexWrapper} from "../../components/FlexWrapper";
-import {Link, LinkText} from "../../components/link/Link";
+import {Link} from "../../components/link/Link";
 import photo from "../../assets/images/jpg/Good/ProfileMain.webp"
 import {Container} from "../../components/Container";
 import {Icon} from "../../components/icon/Icon";
@@ -27,8 +27,8 @@ export const Header = () => {
                             feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc
                             lectus.</StyledHeaderText>
 
-                        <Link width={"154px"} height={"50px"}>
-                            <LinkText>HIRE ME</LinkText>
+                        <Link width={"154px"} height={"50px"} gap={"10px"}>
+                            HIRE ME
                             <Icon width={"16px"} height={"16px"} viewBox={"0 0 16 16"} iconId={"arrow-right-black"}/>
                         </Link>
                     </div>
@@ -40,12 +40,8 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-    outline: 1px solid #0606f5;
-    //background-color: #ffe4b4;
     display: flex;
-
-    //position: relative;
-    
+        
      ${Container} {
         background-image: url(${ellipse15}), 
                           url(${ellipse12}), 
@@ -62,24 +58,30 @@ const StyledHeader = styled.header`
                              374px 374px,
                              558px 380px,
                              949px 427px;
-    }    
+    }
+    
+    ${Link} {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+    }
 `
 
 const StyledHeaderTitle = styled.h1`
-    font-size: 48px;
-    font-weight: 700;
     
     span {
+        font-family: "Inter", sans-serif;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 123.6%;
+        text-align: left;
         color: ${theme.colors.accent};
     }
 `
 
 const StyledHeaderText = styled.p`
-    color: ${theme.colors.fontDiscription};
     font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    text-transform: capitalize;
+    text-align: left;
     
     padding: 18px 0 25px;
 `
@@ -92,13 +94,6 @@ const StyledPhoto = styled.img`
     object-fit: cover;
     display: flex;
 `
-
-// const StyledLinkText = styled.span`
-//     color: ${theme.colors.font};
-//     font-size: 16px;
-//     font-weight: 500;
-//     line-height: 19px;
-// `
 
 //Support - для FlexWrapper задать display: grid; grid-template-columns: 1fr 1fr Также для адаптива сделать imgWrapper
 

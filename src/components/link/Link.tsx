@@ -15,14 +15,14 @@ type LinkPropsType = {
     gap?: string
     fill?: string
 
-    fontSize?: string
-    fontWeight?: string
-    lineHeight?: string
-    textTransform?: string
-    fontFamily?: string
+    // fontSize?: string
+    // fontWeight?: string
+    // lineHeight?: string
+    // textTransform?: string
+    // fontFamily?: string
 }
 
-export const LinkText = styled.span``
+// export const LinkText = styled.span``
 
 export const Link = styled.a<LinkPropsType>`
     width: ${props => props.width};
@@ -37,14 +37,5 @@ export const Link = styled.a<LinkPropsType>`
     align-items: ${props => props.align || "center"};
     gap: ${props => props.gap || "20px"};
     fill: ${props => props.fill};
-
-    ${LinkText} {
-        font-family: ${props => props.fontFamily};
-        color: ${props => props.color || theme.colors.font};
-        font-size: ${props => props.fontSize || "14px"};
-        font-weight: ${props => props.fontWeight || "500"};
-        line-height: ${props => props.lineHeight || "17px"};
-        text-transform: ${props => props.textTransform || "uppercase"};
-    }
 `
 

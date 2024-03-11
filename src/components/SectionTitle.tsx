@@ -10,16 +10,21 @@ type SectionTitlePropsType = {
 
 export const SectionTitle = (props: SectionTitlePropsType) => {
     return (
-        <div>
+        <BoxTitle>
             <StyledSectionTitle>{props.textTitle}</StyledSectionTitle>
             <FlexWrapper justify={"center"} align={"center"}>
                 <StyledSectionDiscription>{props.textDiscription}</StyledSectionDiscription>
             </FlexWrapper>
-        </div>
+        </BoxTitle>
 
     );
 };
 
+const BoxTitle = styled.div`
+    // width: 100%;
+    // background-color: ${theme.colors.secondaryBg};
+    // overflow: hidden;
+`
 
 const StyledSectionTitle = styled.h2`
     font-size: 32px;

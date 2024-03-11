@@ -10,35 +10,35 @@ export const ServiceDimond = () => {
             <FlexWrapper direction={"column"} gap={"16px"}>
                 <ServiceSection>
                     <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"check"}/>
-                    <ServiceName>UI Design</ServiceName>
+                    <ServiceName className={"active"}>UI Design</ServiceName>
                 </ServiceSection>
                 <ServiceSection>
                     <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"check"}/>
-                    <ServiceName>web development</ServiceName>
+                    <ServiceName className={"active"}>web development</ServiceName>
                 </ServiceSection>
                 <ServiceSection>
                     <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"cross"}/>
-                    <ServiceName>logo design</ServiceName>
+                    <ServiceName className={"active"}>logo design</ServiceName>
                 </ServiceSection>
                 <ServiceSection>
                     <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"cross"}/>
-                    <ServiceName>seo optimization</ServiceName>
+                    <ServiceName className={"active"}>seo optimization</ServiceName>
                 </ServiceSection>
                 <ServiceSection>
                     <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"cross"}/>
-                    <ServiceName>wordPress integration</ServiceName>
+                    <ServiceName className={"active"}>wordPress integration</ServiceName>
                 </ServiceSection>
                 <ServiceSection>
                     <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"cross"}/>
-                    <ServiceName>5 Websites</ServiceName>
+                    <ServiceName className={"active"}>5 Websites</ServiceName>
                 </ServiceSection>
                 <ServiceSection>
                     <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"cross"}/>
-                    <ServiceName>unlimited user</ServiceName>
+                    <ServiceName className={"active"}>unlimited user</ServiceName>
                 </ServiceSection>
                 <ServiceSection>
                     <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"cross"}/>
-                    <ServiceName>20 gB bandwith</ServiceName>
+                    <ServiceName className={"active"}>20 gB bandwith</ServiceName>
                 </ServiceSection>
             </FlexWrapper>
         </StyledServiceDimond>

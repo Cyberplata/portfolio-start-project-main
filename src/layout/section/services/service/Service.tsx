@@ -30,10 +30,8 @@ const StyledService = styled.div`
     
     background-color: ${theme.colors.primaryBg};
     width: 310px;
-    padding: 28px 76px 42px;
+    padding: 34px 32px;
     flex-grow: 1;
-    //position: relative;
-
 `
 
 const ServiceTitle = styled.h3`
@@ -46,10 +44,5 @@ const ServiceTitle = styled.h3`
 `
 
 const ServiceText = styled.p`
-    color: ${theme.colors.fontDiscription};
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-    text-transform: capitalize;
-    text-align: center;
+    
 `

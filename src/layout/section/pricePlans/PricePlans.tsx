@@ -27,17 +27,5 @@ export const PricePlans = () => {
 };
 
 const StyledPricePlans = styled.section`
-    //background-color: #f8f0a8;
     display: flex;
-    //max-width: 248px;
-    //width: 100%;
-    //min-height: 100vh;
 `
-
-/*
-const PricePlansDescription = styled.p`
-    max-width: 438px;
-    width: 100%;
-    margin: 25px 0 50px;
-    text-align: center;
-`*/

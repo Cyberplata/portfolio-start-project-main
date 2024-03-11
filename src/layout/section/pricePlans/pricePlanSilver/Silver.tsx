@@ -23,7 +23,13 @@ export const Silver = () => {
 
                 <ServiceSilver/>
 
-                <Link width={"170px"} height={"38px"} borderRadius={"30px"} backgroundColor={"rgb(255, 255, 255)"} boxShadow={"0px 1px 10px 0px rgba(0, 0, 0, 0.15)"}>ORDER NOW</Link>
+                <Link width={"170px"}
+                      height={"38px"}
+                      borderRadius={"30px"}
+                      backgroundColor={"rgb(255, 255, 255)"}
+                      boxShadow={"0px 1px 10px 0px rgba(0, 0, 0, 0.15)"}>
+                    ORDER NOW
+                </Link>
             </FlexWrapper>
         </StyledPricePlanSilver>
     );
@@ -50,17 +56,10 @@ const StyledPricePlanSilver = styled.div`
 `
 
 const PricePlanTitle = styled.h3`
-    color: ${theme.colors.font};
     font-size: 24px;
     font-weight: 600;
-    text-transform: capitalize;
 `
 
 const PricePlanTotalText = styled.p`
-    color: ${theme.colors.fontDiscription};
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-    text-transform: capitalize;
-    text-align: center;
+    
 `

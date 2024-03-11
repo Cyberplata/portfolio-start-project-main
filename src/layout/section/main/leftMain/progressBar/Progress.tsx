@@ -31,30 +31,15 @@ export const Progress = (props: ProgressPropsType) => {
 };
 
 const StyledProgress = styled.div`
-    //display: flex;
-    //justify-content: space-between;
-    //gap: 10px;
     
 `
 
-const ProgressPercent = styled.div`
-    color: ${theme.colors.fontDiscription};
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-    //letter-spacing: 0%;
-    //text-align: left;
-    text-transform: capitalize;
+const ProgressPercent = styled.p`
+    
 `
 
-const ProgressName = styled.div`
-    color: ${theme.colors.fontDiscription};
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-    //letter-spacing: 0%;
-    //text-align: left;
-    text-transform: capitalize;
+const ProgressName = styled.p`
+    
 `
 
 // const ProgressContainer = styled.div`

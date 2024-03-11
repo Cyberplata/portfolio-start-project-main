@@ -3,7 +3,7 @@ import {theme} from "../../../../styles/Theme";
 
 
 export const PricePlanTotal = styled.p`
-    padding: 20px 0 8px;
+    padding: 20px 0 10px;
 
     color: ${theme.colors.font};
     font-size: 32px;
@@ -19,7 +19,8 @@ export const PricePlanTotal = styled.p`
         display: inline-block;
         position: absolute;
         left: 105%;
-        bottom: 6px;
+        bottom: 0;
+        transform: translateY(-2px);
 
         color: ${theme.colors.font};
         font-family: "Inter", sans-serif;

@@ -2,6 +2,7 @@ import React from 'react';
 import {FlexWrapper} from "../../../../../components/FlexWrapper";
 import styled from "styled-components";
 import {Icon} from "../../../../../components/icon/Icon";
+import {theme} from "../../../../../styles/Theme";
 
 // type ServiceSilverPropsType = {
 //     iconId?: string
@@ -13,11 +14,11 @@ export const ServiceSilver = () => {
             <FlexWrapper direction={"column"} gap={"16px"}>
                 <ServiceSection>
                     <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"check"}/>
-                    <ServiceName>UI Design</ServiceName>
+                    <ServiceName className={"active"}>UI Design</ServiceName>
                 </ServiceSection>
                 <ServiceSection>
                     <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"check"}/>
-                    <ServiceName>web development</ServiceName>
+                    <ServiceName className={"active"}>web development</ServiceName>
                 </ServiceSection>
                 <ServiceSection>
                     <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"cross"}/>
@@ -60,4 +61,8 @@ const ServiceSection = styled.div`
     gap: 14px;
 `
 
-const ServiceName = styled.span``
+const ServiceName = styled.span`
+    // &.active {
+    //     color: ${theme.colors.font};
+    // }
+`

@@ -39,13 +39,8 @@ export const Services = () => {
 };
 
 const StyledServices = styled.section`
-    //background-color: #9db0fa;
-    //min-height: 100vh;
+    margin: 138px 0;
+
     display: flex;
-    position: relative;
-    //z-index: 99999;
-
-    padding-top: 130px;
-
-    outline: 1px solid #0606f5;
+    //position: relative;
 `

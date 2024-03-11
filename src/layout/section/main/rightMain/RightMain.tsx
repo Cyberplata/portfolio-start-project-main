@@ -64,7 +64,6 @@ const StyledRightMain = styled.aside`
 
     max-width: 108px;
     width: 100%;
-    //background-color: #dbdfff;
     min-height: 100vh;
     padding: 50px 34px;
 

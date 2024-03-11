@@ -1,5 +1,6 @@
 import {createGlobalStyle} from "styled-components";
 import {theme} from "./Theme";
+import {Link} from "../components/link/Link";
 
 export const GlobalStyle = createGlobalStyle`
     *,
@@ -22,13 +23,6 @@ export const GlobalStyle = createGlobalStyle`
         line-height: 1.2;
     }
 
-    h3 {
-        color: ${theme.colors.font};
-        font-size: 18px;
-        font-weight: 500;
-        text-transform: capitalize;
-    }
-
     a {
         text-decoration: none;
     }
@@ -40,6 +34,14 @@ export const GlobalStyle = createGlobalStyle`
     button {
         background-color: unset;
         border: none;
+
+        color: ${theme.colors.font};
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17px;
+        text-align: center;
+        text-transform: uppercase;
     }
 
     //aside {
@@ -51,10 +53,14 @@ export const GlobalStyle = createGlobalStyle`
     }
 
 
-    section:not(:first-child) {
-        padding: 70px 0;
-        background-color: ${theme.colors.secondaryBg};
+    section {
+        margin: 70px 0;
     }
+    
+    // section:not(:first-child) {
+    //     padding: 70px 0;
+    //     // background-color: ${theme.colors.secondaryBg};
+    // }
 
     // section:nth-child(3n-1) {
     //     padding: 70px 0;
@@ -84,5 +90,46 @@ export const GlobalStyle = createGlobalStyle`
 
     #root {
         height: 100%;
+    }
+    
+    h1 {
+        font-family: "Inter", sans-serif;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 123.6%;
+        text-align: left;
+    }
+
+    h3 {
+        color: ${theme.colors.font};
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: capitalize;
+    }
+
+    span,
+    p {
+        color: ${theme.colors.fontDiscription};
+        font-family: "Inter", sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        text-transform: capitalize;
+        text-align: center;
+
+        &.active {
+            color: ${theme.colors.font};
+        }
+    }
+
+    ${Link} {
+        color: ${theme.colors.font};
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17px;
+        text-align: center;
+        text-transform: uppercase;
     }
 `

@@ -4,7 +4,7 @@ import {FlexWrapper} from "../../../../../components/FlexWrapper";
 import {theme} from "../../../../../styles/Theme";
 import {Progress} from "../progressBar/Progress";
 import {ProgressLine} from "../progressBar/progressLine/ProgressLine";
-import {tmpdir} from "node:os";
+import {Line} from "../../../../../components/Line";
 
 export const Languages = () => {
     return (
@@ -36,43 +36,17 @@ export const Languages = () => {
                 </Box>
             </FlexWrapper>
 
-            <Line></Line>
+            <Line/>
         </StyledLanguages>
     );
 };
 
 
-const Line = styled.div``
-
 const StyledLanguages = styled.div`
     outline: 1px solid #0e0d0d;
-
-    ${Line} {
-        position: relative;
-        z-index: 0;
-
-        &::before {
-            content: "";
-            display: inline-block;
-            width: 100%;
-            height: 0;
-            border: 1.5px solid ${theme.colors.secondaryBg};
-
-            position: absolute;
-            bottom: -24px;
-            z-index: -1;
-        }
-    }
 `
 
 const LanguagesTitle = styled.h3`
-    color: ${theme.colors.font};
-    font-size: 18px;
-    font-weight: 500;
-    //line-height: 123.6%;
-    //letter-spacing: 0%;
-    //text-align: left;
-    text-transform: capitalize;
     
     padding-bottom: 5px;
 `

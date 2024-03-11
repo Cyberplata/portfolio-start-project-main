@@ -50,17 +50,10 @@ const StyledPricePlanSilver = styled.div`
 `
 
 const PricePlanTitle = styled.h3`
-    color: ${theme.colors.font};
     font-size: 24px;
     font-weight: 600;
-    text-transform: capitalize;
 `
 
 const PricePlanTotalText = styled.p`
-    color: ${theme.colors.fontDiscription};
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-    text-transform: capitalize;
-    text-align: center;
+
 `

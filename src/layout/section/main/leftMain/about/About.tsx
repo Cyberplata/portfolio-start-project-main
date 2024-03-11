@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import {FlexWrapper} from "../../../../../components/FlexWrapper";
 import {theme} from "../../../../../styles/Theme";
+import {Line} from "../../../../../components/Line";
 
 export const About = () => {
     return (
@@ -24,31 +25,14 @@ export const About = () => {
                     <RightColumn>Dhaka,Bangladesh</RightColumn>
                 </AboutContent>
             </FlexWrapper>
-            <Line></Line>
+            <Line/>
         </StyledAbout>
     );
 };
 
-const Line = styled.div``
 
 const StyledAbout = styled.div`
     outline: 1px solid #0e0d0d;
-
-    ${Line} {
-        position: relative;
-        z-index: 0;
-
-        &::before {
-            content: "";
-            display: inline-block;
-            width: 100%;
-            height: 0;
-            border: 1.5px solid ${theme.colors.secondaryBg};
-
-            position: absolute;
-            bottom: -24px;
-            z-index: -1;
-        }
 `
 
 const AboutContent = styled.div`

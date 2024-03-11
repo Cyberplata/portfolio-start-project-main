@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
+import {Line} from "../../../components/Line";
 
 type EducationDetilsPropsType = {
     textPlace: string
@@ -8,13 +9,13 @@ type EducationDetilsPropsType = {
     textPeriod: string
     textCertificate: string
     textCertDiscription: string
-    marginE?: string
+    // marginE?: string
 }
 
 export const EducationDetils = (props: EducationDetilsPropsType) => {
     return (
-        <StyledEducationDetils >
-            <FlexWrapper wrap={"wrap"} justify={"space-between"}>
+        <StyledEducationDetils>
+            <FlexWrapper justify={"space-between"}>
 
                 <StyledLeftColumn>
                     <PlaceOfTraining>{props.textPlace}</PlaceOfTraining>
@@ -28,19 +29,19 @@ export const EducationDetils = (props: EducationDetilsPropsType) => {
                 </StyledRightColumn>
 
             </FlexWrapper>
+            <Line/>
         </StyledEducationDetils>
     );
 };
 
 
-type StyledEducationDetilsPropsType = {
-    marginE?: string
-}
+// type StyledEducationDetilsPropsType = {
+//     marginE?: string
+// }
 
-const StyledEducationDetils = styled.div<StyledEducationDetilsPropsType>`
-    background-color: #fff;
-
-    margin: ${props => props.marginE};
+const StyledEducationDetils = styled.div`
+    //background-color: #fff;
+    
 `
 
 const StyledLeftColumn = styled.div`

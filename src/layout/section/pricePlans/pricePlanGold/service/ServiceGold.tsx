@@ -13,19 +13,19 @@ export const ServiceGold = () => {
             <FlexWrapper direction={"column"} gap={"16px"}>
                 <ServiceSection>
                     <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"check"}/>
-                    <ServiceName>UI Design</ServiceName>
+                    <ServiceName className={"active"}>UI Design</ServiceName>
                 </ServiceSection>
                 <ServiceSection>
                     <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"check"}/>
-                    <ServiceName>web development</ServiceName>
+                    <ServiceName className={"active"}>web development</ServiceName>
                 </ServiceSection>
                 <ServiceSection>
                     <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"check"}/>
-                    <ServiceName>logo design</ServiceName>
+                    <ServiceName className={"active"}>logo design</ServiceName>
                 </ServiceSection>
                 <ServiceSection>
                     <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"check"}/>
-                    <ServiceName>seo optimization</ServiceName>
+                    <ServiceName className={"active"}>seo optimization</ServiceName>
                 </ServiceSection>
                 <ServiceSection>
                     <Icon height={"24px"} width={"24px"} viewBox={"0 0 24 24"} iconId={"cross"}/>

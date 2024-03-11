@@ -6,6 +6,7 @@ import {FlexWrapper} from "../../../../../components/FlexWrapper";
 import {Link} from "../../../../../components/link/Link";
 import {theme} from "../../../../../styles/Theme";
 import available from "../../../../../assets/images/svg/leftMenu-svg/Available.svg";
+import { Line } from '../../../../../components/Line';
 
 
 export const Profile = () => {
@@ -48,32 +49,15 @@ export const Profile = () => {
                     </Link>
                 </LeftMainItem>
             </LeftMainList>
-            <Line></Line>
+            <Line/>
         </StyledProfile>
     );
 };
 
-const Line = styled.div``
+
 
 const StyledProfile = styled.div`
     outline: 1px solid #0e0d0d;
-
-    ${Line} {
-        position: relative;
-        z-index: 0;
-        
-        &::before {
-            content: "";
-            display: inline-block;
-            width: 100%;
-            height: 0;
-            border: 1.5px solid ${theme.colors.secondaryBg};
-
-            position: absolute;
-            bottom: -24px;
-            z-index: -1;
-        }
-    }
 
 
     background-image: url(${available});
@@ -109,15 +93,7 @@ const LeftMenuTitle = styled.h3`
 `
 
 const LeftMenuText = styled.p`
-    color: ${theme.colors.fontDiscription};
-    //font-family: Inter;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-    //letter-spacing: 0%;
-    //text-align: left;
-    text-transform: capitalize;
-    
+       
     padding: 15px 0;
 `
 

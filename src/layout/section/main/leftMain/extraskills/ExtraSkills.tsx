@@ -4,6 +4,7 @@ import styled from "styled-components";
 import {Icon} from "../../../../../components/icon/Icon";
 import {theme} from "../../../../../styles/Theme";
 import {Link} from "../../../../../components/link/Link";
+import {Line} from "../../../../../components/Line";
 
 export const ExtraSkills = () => {
     return (
@@ -28,40 +29,18 @@ export const ExtraSkills = () => {
                 </ExtraSkillsContent>
             </FlexWrapper>
 
-            <Line></Line>
+            <Line/>
         </StyledExtraSkills>
     );
 };
 
-const Line = styled.div``
 
 const StyledExtraSkills = styled.div`
     outline: 1px solid #0e0d0d;
-
-    ${Line} {
-        position: relative;
-        z-index: 0;
-
-        &::before {
-            content: "";
-            display: inline-block;
-            width: 100%;
-            height: 0;
-            border: 1.5px solid ${theme.colors.secondaryBg};
-
-            position: absolute;
-            bottom: -24px;
-            z-index: -1;
-        }
-    }
+    
 `
 
-const ExtraSkillsTitle = styled.h3`
-    color: ${theme.colors.font};
-    font-size: 18px;
-    font-weight: 500;
-    text-transform: capitalize;
-    
+const ExtraSkillsTitle = styled.h3`    
     padding-bottom: 10px;
 `
 
@@ -71,12 +50,6 @@ const ExtraSkillsContent = styled.div`
     padding-top: 5px;
 `
 
-const SkillsName = styled.span`
-    color: ${theme.colors.fontDiscription};
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-    text-transform: capitalize;
-    
+const SkillsName = styled.span`    
     padding-left: 15px;
 `
