@@ -19,7 +19,7 @@ const portfolioItems = ["All categories", "UI Design", "Web Templates", "Logo", 
 export const Portfolio = () => {
     return (
         <StyledPortfolio>
-            <Container paddingPortfolio={"0"}>
+            <Container>
 
                 <SectionTitle textTitle={"Portfolio"} textDiscription={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum"}/>
 

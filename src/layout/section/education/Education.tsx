@@ -35,10 +35,14 @@ export const Education = () => {
 
 const StyledEducation = styled.section`
     display: flex;
+    
+    //padding: 42px 30px;
 `
 
 const BoxBackgroundEducation = styled.div`
     background-color: ${theme.colors.primaryBg};
+
+    padding: 42px 30px;
 `
 
 const StyledCenterBox = styled.div`

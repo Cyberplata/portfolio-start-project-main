@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import {Link} from "../../../../components/link/Link";
 import {Icon} from "../../../../components/icon/Icon";
+import {theme} from "../../../../styles/Theme";
 
 type PostPropsType = {
     title: string
@@ -13,21 +14,43 @@ export const Post = (props: PostPropsType) => {
     return (
         <StyledPost>
             <Image src={props.src} alt=""/>
-            <PostTitle>{props.title}</PostTitle>
-            <PostText>{props.text}</PostText>
+            <Box>
+                <PostTitle>{props.title}</PostTitle>
+                <PostText>{props.text}</PostText>
 
-            <Link backgroundColor={"unset"} color={"rgb(255, 180, 0)"} gap={"0"} justify={"flex-start"}>
-                Learn more
-                <Icon width={"20px"} height={"20px"} viewBox={"0 0 20 20"} iconId={"right-arrow"}/>
-            </Link>
+                <Link backgroundColor={"unset"} gap={"0"} justify={"flex-start"}>
+                    <span>Learn more</span>
+                    <Icon width={"20px"} height={"20px"} viewBox={"0 0 20 20"} iconId={"right-arrow"}/>
+                </Link>
+            </Box>
         </StyledPost>
     );
 };
 
 const StyledPost = styled.div`
-    border: 1px solid black;
+    outline: 1px solid black;
     max-width: 310px;
     width: 100%;
+    
+    ${Link} {
+        // color: ${theme.colors.accent};
+        // font-size: 18px;
+        // font-weight: 500;
+        // text-align: left;
+        // text-transform: capitalize;
+        
+        span {
+            color: ${theme.colors.accent};
+            font-size: 18px;
+            font-weight: 500;
+            text-align: left;
+            text-transform: capitalize;
+        }
+        
+        span:hover {
+            border-bottom: 1px solid ${theme.colors.fontDiscription};
+        }
+    }
 `
 
 const Image = styled.img`
@@ -36,8 +59,15 @@ const Image = styled.img`
     object-fit: cover;
 `
 
+const Box = styled.div`
+    padding: 25px;
+`
+
 const PostTitle = styled.h3`
     text-transform: capitalize;
 `
 
-const PostText = styled.p``
+const PostText = styled.p`
+    text-align: left;
+    padding: 8px 0;
+`

@@ -35,15 +35,31 @@ const StyledPortfolioMenu = styled.nav`
         gap: 36px;
         justify-content: center;
     }
+    
+    span {
+        color: ${theme.colors.font};
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.2;
+        text-transform: capitalize;
+        text-align: center;
+    }
 `
 
 const Link = styled.a`
+        //color: ${theme.colors.font};
     font-family: "Inter", sans-serif;
     font-size: 18px;
     font-weight: 500;
+    line-height: 1.2;
     text-transform: capitalize;
+    text-align: center;
+    //color: red;
     color: transparent;
-    
+
+    border: 1px solid #12f612;
+
     &:hover {
         color: ${theme.colors.accent};
 
@@ -54,15 +70,23 @@ const Link = styled.a`
     }
 `
 
-const Mask = styled.span`
+const Mask = styled.span` // был span
     position: absolute;
     top: 0;
     left: 0;
     display: inline-block;
     height: 50%;
     overflow: hidden;
+    color: transparent;
+
+    // color: ${theme.colors.font};
+    // font-family: "Inter", sans-serif;
+    // font-size: 18px;
+    // font-weight: 500;
+    // text-transform: capitalize;
+    // text-align: center;
+    
     //outline: 1px solid red;
-    color: ${theme.colors.font};
 
     & + & {  // Если следующий span после span есть, то применяются свойства
         top: 50%;  // Условная линия, где будет разрыв Масок

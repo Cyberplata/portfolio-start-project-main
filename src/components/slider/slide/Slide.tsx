@@ -39,11 +39,11 @@ export const Slide = (props: ReviewPropsType) => {
 };
 
 const StyledReview = styled.div`
-    outline: 1px solid #23fc25;
+    outline: 1px solid #070707;
     max-width: 310px;
     width: 100%;
     padding: 25px 20px;
-    
+
 `
 
 const ReviewTitle = styled.h3`
@@ -63,6 +63,7 @@ const ReviewText = styled.p`
     font-weight: 400;
     line-height: 24px;
     text-transform: capitalize;
+    text-align: left;
 `
 
 const Image = styled.img`
