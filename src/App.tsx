@@ -15,6 +15,7 @@ import {Map} from "./layout/section/map/Map";
 import {Logo} from './layout/section/logo/Logo';
 import {Footer} from "./layout/footer/Footer";
 import { ContainerLayout } from './components/ContainerLayout';
+import { PricesSupport} from "./layout/section/pricesSupport/PricesSupport";
 
 
 function App() {
@@ -24,7 +25,8 @@ function App() {
             <ContainerLayout>
                 <Header/>
                 <Services/>
-                <PricePlans/>
+                {/*<PricePlans/>*/}
+                <PricesSupport/>
                 <Recommendations/>
                 <Education/>
                 <WorkHistory/>

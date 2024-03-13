@@ -33,7 +33,7 @@ const StyledSectionTitle = styled.h2`
     text-transform: capitalize;
 `
 
-const StyledSectionDiscription = styled.h2`
+const StyledSectionDiscription = styled.p`
     color: ${theme.colors.fontDiscription};
     font-size: 15px;
     font-weight: 400;
