@@ -12,12 +12,12 @@ export const Services = (props: ServicesPropsType) => {
         <StyledServices>
             <ul>
                 <ItemListServices>
-                    {/*<FlexWrapper align={"center"} >*/}
-                    <div>
+                    <FlexWrapper align={"center"} gap={"15px"}>
+                    {/*<div>*/}
                         {props.icon}
                         {props.itemPrice}
-                    </div>
-                    {/*</FlexWrapper>*/}
+                    {/*</div>*/}
+                    </FlexWrapper>
                 </ItemListServices>
             </ul>
         </StyledServices>
@@ -27,13 +27,15 @@ export const Services = (props: ServicesPropsType) => {
 const StyledServices = styled.nav`
     //outline: 1px solid #0e0d0d;
     //margin: 20px 0 32px;
-    //width: 100%;
+    width: 100%;
 
     ul {
-
+        //margin: 10px 0;
+        //outline: 1px solid #0e0d0d;
     }
 `
 
 const ItemListServices = styled.li`
-
+    outline: 1px solid #0e0d0d;
+    //margin: 10px 0;
 `

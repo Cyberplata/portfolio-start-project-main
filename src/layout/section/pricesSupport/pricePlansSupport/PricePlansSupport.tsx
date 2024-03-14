@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import {theme} from "../../../../styles/Theme";
 import {Link} from "../../../../components/link/Link";
+import {FlexWrapper} from "../../../../components/FlexWrapper";
 import {Services} from "../service/Services";
 
 
@@ -16,28 +17,31 @@ type PricePlansSupportPropsType = {
 export const PricePlansSupport = (props: PricePlansSupportPropsType) => {
     return (
         <StyledPricePlansSupport>
-            <PriceTitle>{props.title}</PriceTitle>
-            <Value>
-                <ValuePrice>
-                    {props.price} <span>/Hour</span>
-                </ValuePrice>
-                <ValueText>{props.text}</ValueText>
-            </Value>
+            <FlexWrapper direction={"column"} justify={"center"} align={"center"} wrap={"wrap"}>
+                <PriceTitle>{props.title}</PriceTitle>
+                <Value>
+                    <ValuePrice>
+                        {props.price} <span>/Hour</span>
+                    </ValuePrice>
+                    <ValueText>{props.text}</ValueText>
+                </Value>
 
-            { props.arrayServiceItems.map( (item) => {
-                return <Services itemPrice={item.text}
-                                 icon={item.icon}
-                       />
-              })
-            }
+                { props.arrayServiceItems.map( (item) => {
+                    return <Services itemPrice={item.text}
+                                     icon={item.icon}
+                           />
+                  })
+                }
 
-            <Link width={"170px"}
-                  height={"38px"}
-                  borderRadius={"30px"}
-                  backgroundColor={"rgb(255, 255, 255)"}
-                  boxShadow={"0px 1px 10px 0px rgba(0, 0, 0, 0.15)"}>
-                ORDER NOW
-            </Link>
+                <Link width={"170px"}
+                      height={"38px"}
+                      borderRadius={"30px"}
+                      backgroundColor={"rgb(255, 255, 255)"}
+                      boxShadow={"0px 1px 10px 0px rgba(0, 0, 0, 0.15)"}
+                >
+                    ORDER NOW
+                </Link>
+            </FlexWrapper>
         </StyledPricePlansSupport>
     );
 };
@@ -55,6 +59,10 @@ const StyledPricePlansSupport = styled.div`
         font-weight: 700;
         line-height: 17px;
         text-transform: capitalize;
+    }
+
+    ${Link}:hover {
+        background-color: ${theme.colors.accent};
     }
 `
 

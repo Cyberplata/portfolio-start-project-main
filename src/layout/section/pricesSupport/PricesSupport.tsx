@@ -25,7 +25,8 @@ export const PricesSupport = () => {
                                        text={"For most businesses that want to optimize web queries"}
                                        arrayServiceItems={silverItems}
                     />
-                    <PricePlansSupport title={"gold"}
+                    <PricePlansSupport isMostPopular={true}
+                                       title={"gold"}
                                        price={"$50.00"}
                                        text={"For most businesses that want to optimize web queries"}
                                        arrayServiceItems={goldItems}
