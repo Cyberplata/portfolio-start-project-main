@@ -40,7 +40,11 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-    display: flex;
+    //display: flex;
+    //justify-content: center;
+    margin: 0 auto;
+    max-width: 1030px;
+    //width: 100%;
         
      ${Container} {
         background-image: url(${ellipse15}), 
@@ -59,6 +63,10 @@ const StyledHeader = styled.header`
                              558px 380px,
                              949px 427px;
     }
+    
+    // ${FlexWrapper} {
+    //     background-color: ${theme.colors.primaryBg};
+    // }
     
     ${Link} {
         font-size: 16px;

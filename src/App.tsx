@@ -25,7 +25,7 @@ function App() {
             <ContainerLayout>
                 <Header/>
                 <Services/>
-                {/*<PricePlans/>*/}
+                <PricePlans/>
                 <PricesSupport/>
                 <Recommendations/>
                 <Education/>

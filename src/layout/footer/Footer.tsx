@@ -19,6 +19,10 @@ export const Footer = () => {
 const StyledFooter = styled.footer`
     //background-color: rgb(253, 189, 158);
     //min-height: 5vh;
+    margin: 0 auto;
+    max-width: 1030px;
+    
+    padding: 14px 0;
 `
 
 const Copyright = styled.small`
