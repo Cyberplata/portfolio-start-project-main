@@ -28,11 +28,14 @@ export const Post = (props: PostPropsType) => {
 };
 
 const StyledPost = styled.div`
+    background-color: ${theme.colors.primaryBg};
     outline: 1px solid black;
     max-width: 310px;
     width: 100%;
     
     ${Link} {
+        //width: 99px;
+        //height: 22px;
         // color: ${theme.colors.accent};
         // font-size: 18px;
         // font-weight: 500;
@@ -48,7 +51,7 @@ const StyledPost = styled.div`
         }
         
         span:hover {
-            border-bottom: 1px solid ${theme.colors.fontDiscription};
+            border-bottom: 1px solid ${theme.colors.accent};
         }
     }
 `

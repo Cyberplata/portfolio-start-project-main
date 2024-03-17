@@ -99,6 +99,16 @@ export const GlobalStyle = createGlobalStyle`
         line-height: 123.6%;
         text-align: left;
     }
+    
+    h2 {
+        color: ${theme.colors.font};
+        font-family: "Inter", sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 123.6%;
+        text-align: left;
+        text-transform: capitalize;
+    }
 
     h3 {
         color: ${theme.colors.font};

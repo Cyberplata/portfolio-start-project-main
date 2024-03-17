@@ -39,6 +39,7 @@ export const Slide = (props: ReviewPropsType) => {
 };
 
 const StyledReview = styled.div`
+    background-color: ${theme.colors.primaryBg};
     outline: 1px solid #070707;
     max-width: 310px;
     width: 100%;

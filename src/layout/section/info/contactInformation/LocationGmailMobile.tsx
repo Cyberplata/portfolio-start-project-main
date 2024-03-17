@@ -21,38 +21,60 @@ type LocationGmailMobilePropsType = {
 export const LocationGmailMobile = (props: LocationGmailMobilePropsType) => {
     return (
         <StyledLocationGmailMobile>
+            <IconWrapper>
+                <Icon iconId={props.iconId}
+                      width={props.width}
+                      height={props.height}
+                      viewBox={props.viewBox}
+                />
+            </IconWrapper>
 
-            <Icon iconId={props.iconId}
-                  width={props.width}
-                  height={props.height}
-                  viewBox={props.viewBox}
-            />
-            <FlexWrapper justify={"space-between"}>
-                <span>{props.titleLeftFirst}</span>
-                <span>{props.descriptionRightFirst}</span>
-            </FlexWrapper>
-            <FlexWrapper justify={"space-between"}>
-                <span>{props.titleLeftSecond}</span>
-                <span>{props.descriptionRightSecond}</span>
-            </FlexWrapper>
-            <FlexWrapper justify={"space-between"}>
-                <span>{props.titleLeftThird}</span>
-                <span>{props.descriptionRightThird}</span>
-            </FlexWrapper>
+            <FlexWrapper direction={"column"} justify={"space-between"} gap={"16px"}>
 
+                <FlexWrapper justify={"space-between"} >
+                    <LeftColumnName>{props.titleLeftFirst}</LeftColumnName>
+                    <RightColumnDescription>{props.descriptionRightFirst}</RightColumnDescription>
+                </FlexWrapper>
+                <FlexWrapper justify={"space-between"} >
+                    <LeftColumnName>{props.titleLeftSecond}</LeftColumnName>
+                    <RightColumnDescription>{props.descriptionRightSecond}</RightColumnDescription>
+                </FlexWrapper>
+                <FlexWrapper justify={"space-between"} >
+                    <LeftColumnName>{props.titleLeftThird}</LeftColumnName>
+                    <RightColumnDescription>{props.descriptionRightThird}</RightColumnDescription>
+                </FlexWrapper>
+
+            </FlexWrapper>
         </StyledLocationGmailMobile>
     );
 };
 
+
 const StyledLocationGmailMobile = styled.div`
+    background-color: ${theme.colors.primaryBg};
     border: 1px solid #06ef0b;
-    //max-height: 210px;
     max-width: 370px;
     width: 100%;
     
     display: flex;
     flex-direction: column;
-    gap: 16px; //???
     
-    background-color: ${theme.colors.primaryBg};
+    padding: 25px 25px 15px;
+    //gap: 18px; //???
+`
+
+const IconWrapper = styled.div`
+    margin: 0 auto;
+    padding-bottom: 20px;
+`
+
+const LeftColumnName = styled.span`
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 123.6%;
+    text-align: left;
+`
+
+const RightColumnDescription = styled.span`
+    text-align: right;
 `

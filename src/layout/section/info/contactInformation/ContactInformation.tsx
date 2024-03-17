@@ -6,8 +6,8 @@ import {LocationGmailMobile} from "./LocationGmailMobile";
 export const ContactInformation = () => {
     return (
         <StyledContactInformation>
-            <FlexWrapper direction={"column"} justify={"space-between"}>
-                <Title>Contact information</Title>
+            <Title>Contact information</Title>
+            <FlexWrapper direction={"column"} justify={"space-between"} wrap={"wrap"} gap={"18px"}>
 
                 <LocationGmailMobile iconId={"location"}
                                      width={"40px"}
