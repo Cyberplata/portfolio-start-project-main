@@ -71,6 +71,30 @@ const StyledRightMain = styled.aside`
     right: 0;
     top: 0;
     z-index: 999999;
+
+    @media ${theme.media.tablet} {
+        display: none;
+    }
+
+    /*@media ${theme.media.tablet} {
+        //display: flex;
+        //flex-direction: row;
+        //max-width: 768px;
+        //height: 80px;
+        //width: 100%;
+        padding: 120px 0;
+        
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999999;
+        
+        ${FlexWrapper} {
+            display: flex;
+            flex-direction: row;
+        }
+    }*/
 `
 
 const RightMainList = styled.ul`

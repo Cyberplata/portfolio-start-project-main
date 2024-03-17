@@ -13,6 +13,7 @@ import ellipse16 from "../../assets/images/svg/centerMenu/bg/Ellipse16.svg";
 import rectangle52 from "../../assets/images/svg/centerMenu/bg/Rectangle52.svg";
 import ellipse13 from "../../assets/images/svg/centerMenu/bg/Ellipse13.svg";
 import polygon1 from "../../assets/images/svg/centerMenu/bg/Polygon1.svg";
+import {font} from "../../styles/Common";
 
 
 export const Header = () => {
@@ -20,28 +21,37 @@ export const Header = () => {
         <StyledHeader>
 
             <Container>
-                <FlexWrapper align={"center"} justify={"space-between"}>
-                    <div>
+                <FlexWrapper justify={"space-between"} align={"center"} wrap={"wrap"}>
+                    <Box>
                         <StyledHeaderTitle>I’m Rayan Adlrdard <span>Front-end</span> Developer</StyledHeaderTitle>
+
                         <StyledHeaderText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat
                             feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc
                             lectus.</StyledHeaderText>
+
 
                         <Link width={"154px"} height={"50px"} gap={"10px"}>
                             HIRE ME
                             <Icon width={"16px"} height={"16px"} viewBox={"0 0 16 16"} iconId={"arrow-right-black"}/>
                         </Link>
-                    </div>
-                    <StyledPhoto src={photo}/>
+                    </Box>
+
+                    <PhotoWrapper>
+                        <StyledPhoto src={photo}/>
+                    </PhotoWrapper>
                 </FlexWrapper>
             </Container>
         </StyledHeader>
     );
 };
 
+const Box = styled.div`
+    @media ${theme.media.mobile} {
+        padding: 0 32px;
+    }
+`
+
 const StyledHeader = styled.header`
-    //display: flex;
-    //justify-content: center;
     margin: 0 auto;
     max-width: 1030px;
     //width: 100%;
@@ -64,43 +74,89 @@ const StyledHeader = styled.header`
                              949px 427px;
     }
     
-    // ${FlexWrapper} {
-    //     background-color: ${theme.colors.primaryBg};
-    // }
+    ${FlexWrapper} {
+        @media (max-width: 1366px) {
+            justify-content: center;
+        }
+    }
     
     ${Link} {
         font-size: 16px;
         font-weight: 500;
         line-height: 19px;
+        
+        @media ${theme.media.tablet} {
+            margin-bottom: 50px;
+        }
     }
 `
 
 const StyledHeaderTitle = styled.h1`
+    max-width: 500px;
+    width: 100%;
     
     span {
-        font-family: "Inter", sans-serif;
-        font-size: 48px;
-        font-weight: 700;
-        line-height: 123.6%;
-        text-align: left;
-        color: ${theme.colors.accent};
+        ${font({
+            family: "'Inter', sans-serif", 
+            weight: 700, 
+            color: "#FFB400", 
+            Fmax: 48, 
+            Fmin: 48,
+        })}
+
+        // font-family: "Inter", sans-serif;
+        // font-size: 48px;
+        // font-weight: 700;
+        // line-height: 123.6%;
+        // text-align: left;
+        // color: ${theme.colors.accent};
+        
+    }
+
+    @media ${theme.media.tablet} {
+        margin-top: 100px;
     }
 `
 
 const StyledHeaderText = styled.p`
+    max-width: 424px;
+    width: 100%;
+    
     font-size: 16px;
     text-align: left;
     
-    padding: 18px 0 25px;
+    margin: 18px 0 25px;
+    
+    @media ${theme.media.mobile} {
+        margin: 30px 0 34px;
+    }
+`
+
+const PhotoWrapper = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+
+    @media ${theme.media.mobile} {
+        padding: 0 10px;
+    }
 `
 
 const StyledPhoto = styled.img`
-    max-width: 325px;
-    max-height: 460px;
-    width: auto;
-    height: auto;
+    //max-width: 325px;
+    //max-height: 460px;
+    //width: auto;
+    //height: auto;
+    width: 325px;
+    height: 460px;
     object-fit: cover;
     display: flex;
+    //flex-wrap: wrap;
+
+    @media ${theme.media.tablet} {
+        width: 325px;
+        height: 457px;
+    }
+    
 `
 
 //Support - для FlexWrapper задать display: grid; grid-template-columns: 1fr 1fr Также для адаптива сделать imgWrapper

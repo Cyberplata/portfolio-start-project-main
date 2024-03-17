@@ -9,16 +9,14 @@ import {FlexWrapper} from "../../../../components/FlexWrapper";
 import {Profile} from "./profile/Profile";
 import {Icon} from "../../../../components/icon/Icon";
 import {theme} from "../../../../styles/Theme";
-import {MobileLeftMain} from "./MobileLeftMain";
 
 
-export const LeftMain = () => {
+export const MobileLeftMain = () => {
     return (
-        <StyledLeftMain>
-                {/*<MobileLeftMain/>*/}
-                {/*<BurgerButton>
+        <StyledMobileLeftMain>
+                <BurgerButton>
                     <span></span>
-                </BurgerButton>*/}
+                </BurgerButton>
 
                 <FlexWrapper direction={"column"} justify={"space-between"} gap={"50px"}>
                     <Profile/>
@@ -36,11 +34,11 @@ export const LeftMain = () => {
                     </Link>
 
                 </FlexWrapper>
-        </StyledLeftMain>
+        </StyledMobileLeftMain>
     );
 };
 
-const StyledLeftMain = styled.aside`
+const StyledMobileLeftMain = styled.aside`
     background-color: #FFFFFF;
 
     max-width: 305px;
