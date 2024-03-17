@@ -35,10 +35,11 @@ const StyledServiceAdvertising = styled.div`
     outline: 1px solid #0e0d0d;
 
     background-color: ${theme.colors.primaryBg};
+    //max-width: 300px;
     width: 310px;
     //height: 100%;
     //padding: 62px 20px 40px;
-    padding-top: 34px;
+    padding: 30px 25px;
     flex-grow: 1;
 
     ${Link} {
@@ -47,6 +48,13 @@ const StyledServiceAdvertising = styled.div`
         font-size: 12px;
         font-weight: 700;
         line-height: 14px;
+    }
+
+    /*@media (max-width: 1511px) {
+        max-width: 290px;
+        width: 100%;
+        flex-grow: 1;
+    }*/
 `
 
 const ServiceTitle = styled.h3`
@@ -54,5 +62,5 @@ const ServiceTitle = styled.h3`
 `
 
 const ServiceText = styled.p`
-    padding: 24px 0 24px;
+    padding: 24px 0;
 `

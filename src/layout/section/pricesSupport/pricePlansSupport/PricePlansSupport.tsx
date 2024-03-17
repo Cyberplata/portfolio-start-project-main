@@ -5,6 +5,7 @@ import {Link} from "../../../../components/link/Link";
 import {FlexWrapper} from "../../../../components/FlexWrapper";
 import {ItemListServices} from "../service/ItemListServices";
 import {silverItems} from "../arrayServiceItems/silverItems";
+import {font} from "../../../../styles/Common";
 
 
 type PricePlansSupportPropsType = {
@@ -26,7 +27,7 @@ export const PricePlansSupport = (props: PricePlansSupportPropsType) => {
                 </ServiceMostPopular>)
             }
 
-            <FlexWrapper direction={"column"} justify={"center"} align={"center"}>
+            <FlexWrapper direction={"column"} justify={"center"} align={"center"} wrap={"wrap"}>
                 <PriceTitle>{props.title}</PriceTitle>
                 <Value>
                     <ValuePrice>
@@ -67,12 +68,22 @@ const ServiceMostPopular = styled.div`
 const StyledPricePlansSupport = styled.div`
     outline: 1px solid black;
     background-color: ${theme.colors.primaryBg};
-    max-width: 310px;
-    width: 100%;
+    //max-width: 310px;
+    width: 310px;
     padding: 54px 30px 25px;
+    flex-grow: 1;
+
+    @media (max-width: 1511px) {
+        width: 310px;
+        
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+    }
 
     position: relative;
-    
+
     ${ServiceMostPopular} {
         position: absolute;
         top: 0;
@@ -86,41 +97,58 @@ const StyledPricePlansSupport = styled.div`
         justify-content: center;
         align-items: center;
 
-        font-size: 15px;
-        font-weight: 400;
-        line-height: 24px;
+        ${font({
+            family: "'Inter', sans-serif",
+            weight: 400,
+            lineHeight: .24,
+            Fmax: 15,
+            Fmin: 15,
+        })}
+
         text-align: center;
         text-transform: capitalize;
     }
     
-    
-    
+    //nav {
+    //    display: flex;
+    //    justify-content: center;
+    //}
+
+
     ul {
         //outline: 1px solid red;
         padding: 20px 0;
 
+        ${font({
+            family: "'Inter', sans-serif",
+            weight: 400,
+            lineHeight: .24,
+            Fmax: 15,
+            Fmin: 15,
+        })}
+
         color: ${theme.colors.fontDiscription};
-        font-family: "Inter", sans-serif;
-        font-size: 15px;
-        font-weight: 400;
-        line-height: 24px;
         text-transform: capitalize;
-        text-align: center;
-        
-        {}
+
+        //display: flex;
+        //flex-direction: column;
+        //justify-content: center;
+        //align-items: center;
     }
-    
-    li+li {
-        
+
+    li + li {
         padding-top: 16px;
-        
     }
 
     ${Link} {
-        color: ${theme.colors.font};
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 17px;
+        ${font({
+            family: "'Inter', sans-serif",
+            weight: 700,
+            lineHeight: .17,
+            Fmax: 14,
+            Fmin: 14,
+        })}
+
         text-transform: capitalize;
         margin: 0 auto;
     }
@@ -142,10 +170,14 @@ const Value = styled.div`
 `
 
 const ValuePrice = styled.p`
-    color: ${theme.colors.font};
-    font-size: 32px;
-    font-weight: 700;
-    text-transform: capitalize;
+    ${font({
+        family: "'Inter', sans-serif",
+        weight: 700,
+        lineHeight: .17,
+        Fmax: 32,
+        Fmin: 32,
+    })}
+    
     padding: 20px 0 10px;
 `
 

@@ -29,17 +29,19 @@ const StyledService = styled.div`
     outline: 1px solid #0e0d0d;
     
     background-color: ${theme.colors.primaryBg};
+    //max-width: 300px;
     width: 310px;
     padding: 34px 32px;
     flex-grow: 1;
+    
+    /*@media (max-width: 1511px) {
+        max-width: 290px;
+        width: 100%;
+        flex-grow: 1;
+    }*/
 `
 
 const ServiceTitle = styled.h3`
-    color: ${theme.colors.font};
-    font-size: 18px;
-    font-weight: 500;
-    text-transform: capitalize;
-    
     padding: 26px 0 15px;
 `
 

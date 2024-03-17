@@ -2,6 +2,7 @@ import styled from "styled-components";
 import React from 'react';
 import {FlexWrapper} from "./FlexWrapper";
 import {theme} from "../styles/Theme";
+import {font} from "../styles/Common";
 
 type SectionTitlePropsType = {
     textTitle: string
@@ -27,19 +28,10 @@ const BoxTitle = styled.div`
 `
 
 const StyledSectionTitle = styled.h2`
-    font-size: 32px;
-    font-weight: 700;
     text-align: center;
-    text-transform: capitalize;
 `
 
 const StyledSectionDiscription = styled.p`
-    color: ${theme.colors.fontDiscription};
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: center;
-    text-transform: capitalize;
 
     max-width: 438px;
     width: 100%;

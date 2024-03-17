@@ -5,6 +5,7 @@ import {Container} from "../../../components/Container";
 import {Service} from "./service/Service";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {ServiceAdvertising} from "./service/ServiceAdvertising";
+import {theme} from "../../../styles/Theme";
 
 export const Services = () => {
     return (
@@ -42,5 +43,4 @@ const StyledServices = styled.section`
     margin: 138px 0;
 
     display: flex;
-    //position: relative;
 `

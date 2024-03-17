@@ -9,7 +9,6 @@ import {goldItems} from "./arrayServiceItems/goldItems";
 import {dimondItems} from "./arrayServiceItems/dimondItems";
 
 
-
 export const PricesSupport = () => {
     return (
         <StyledPricePlansSupport>
