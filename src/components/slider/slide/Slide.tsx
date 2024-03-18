@@ -41,10 +41,17 @@ export const Slide = (props: ReviewPropsType) => {
 const StyledReview = styled.div`
     background-color: ${theme.colors.primaryBg};
     outline: 1px solid #070707;
-    max-width: 310px;
-    width: 100%;
-    padding: 25px 20px;
+    width: 310px;
+    //width: 100%;
+    padding: 25px 22px;
+    flex-grow: 1;
 
+    //@media (max-width: 741px) {
+    //    display: flex;
+    //    flex-direction: column;
+    //    justify-content: center;
+    //    align-items: center;
+    //}
 `
 
 const ReviewTitle = styled.h3`

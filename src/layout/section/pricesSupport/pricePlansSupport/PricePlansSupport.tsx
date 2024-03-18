@@ -73,15 +73,6 @@ const StyledPricePlansSupport = styled.div`
     padding: 54px 30px 25px;
     flex-grow: 1;
 
-    @media (max-width: 1511px) {
-        width: 310px;
-        
-        nav {
-            display: flex;
-            justify-content: center;
-        }
-    }
-
     position: relative;
 
     ${ServiceMostPopular} {
@@ -155,6 +146,19 @@ const StyledPricePlansSupport = styled.div`
 
     ${Link}:hover {
         background-color: ${theme.colors.accent};
+    }
+
+    @media (max-width: 1511px) {
+        //width: 310px;
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    @media ${theme.media.mobile} {
+        padding: 54px 0 25px;
     }
 `
 

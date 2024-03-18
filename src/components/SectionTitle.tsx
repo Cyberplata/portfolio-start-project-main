@@ -32,9 +32,8 @@ const StyledSectionTitle = styled.h2`
 `
 
 const StyledSectionDiscription = styled.p`
-
     max-width: 438px;
     width: 100%;
-    margin: 25px 0 50px;
+    padding: 25px 0 50px;
 `
 

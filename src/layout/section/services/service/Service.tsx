@@ -39,6 +39,10 @@ const StyledService = styled.div`
         width: 100%;
         flex-grow: 1;
     }*/
+
+    @media ${theme.media.mobile} {
+        padding: 34px 0 32px;
+    }
 `
 
 const ServiceTitle = styled.h3`

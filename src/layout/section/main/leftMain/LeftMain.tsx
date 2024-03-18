@@ -82,7 +82,7 @@ const StyledLeftMain = styled.aside`
         }
     }
     
-    @media ${theme.media.tablet} {
+    @media (max-width: 1155px) {
         display: none;
     }
 `

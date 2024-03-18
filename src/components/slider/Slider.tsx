@@ -38,7 +38,8 @@ const StyledSlider = styled.div`
     //flex-direction: column;
     //align-items: center;
     //justify-content: center;
-
+    //flex-grow: 1;
+    //width: 310px;
 `
 
 const Pagination = styled.div`

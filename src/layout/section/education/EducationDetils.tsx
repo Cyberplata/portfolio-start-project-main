@@ -16,7 +16,7 @@ type EducationDetilsPropsType = {
 export const EducationDetils = (props: EducationDetilsPropsType) => {
     return (
         <StyledEducationDetils>
-            <FlexWrapper justify={"space-between"}>
+            <FlexWrapper justify={"space-between"} wrap={"wrap"}>
 
                 <StyledLeftColumn>
                     <PlaceOfTraining>{props.textPlace}</PlaceOfTraining>
@@ -47,6 +47,7 @@ export const EducationDetils = (props: EducationDetilsPropsType) => {
 const StyledEducationDetils = styled.div`
     //background-color: #fff;
     outline: 1px solid green;
+    //flex-grow: 1;
     
 `
 
@@ -77,7 +78,7 @@ const Box = styled.div`
     align-items: center;
     gap: 20px;
     
-    padding: 20px 0;
+    //padding: 20px 0;
 `
 
 const Role = styled.span`

@@ -10,7 +10,7 @@ import {theme} from "../../../styles/Theme";
 export const Services = () => {
     return (
         <StyledServices>
-            <Container>
+            <Container paddingPortfolio={"0 28px"}>
 
                 <SectionTitle textTitle={"my services"} textDiscription={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum"}/>
 

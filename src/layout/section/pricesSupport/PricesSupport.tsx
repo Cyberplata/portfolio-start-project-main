@@ -44,5 +44,5 @@ export const PricesSupport = () => {
 };
 
 const StyledPricePlansSupport = styled.section`
-    display: flex;
+    //display: flex;
 `

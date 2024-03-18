@@ -13,9 +13,11 @@ export const RightMain = () => {
         <StyledRightMain>
             <FlexWrapper direction={"column"} justify={"center"} align={"center"} gap={"212px"}>
 
-                <LogoSvg/>
-
                 <RightMainList>
+                    <RightMainItem>
+                        <LogoSvg/>
+                    </RightMainItem>
+
                     <RightMainItem>
                         <Link color={"#FFFFFF"} backgroundColor={"none"}>
                             <Icon height={"40px"} width={"40px"} viewBox={"0 0 40 40"} iconId={"home"}/>
@@ -62,50 +64,50 @@ const StyledRightMain = styled.aside`
     box-shadow: 4px 0px 10px 0px rgba(47, 122, 249, 0.1);
     background-color: #FAFAFA;
 
-    max-width: 108px;
-    width: 100%;
-    min-height: 100vh;
+    //max-width: 108px;
+    //width: 100%;
+    //min-height: 100vh;
     padding: 50px 34px;
 
     position: relative;
-    right: 0;
-    top: 0;
+    //right: 0;
+    //top: 0;
     z-index: 999999;
 
-    @media ${theme.media.tablet} {
-        display: none;
-    }
-
-    /*@media ${theme.media.tablet} {
-        //display: flex;
-        //flex-direction: row;
-        //max-width: 768px;
-        //height: 80px;
-        //width: 100%;
-        padding: 120px 0;
-        
+    @media (max-width: 1155px) {
         position: fixed;
         bottom: 0;
         left: 0;
         right: 0;
-        z-index: 9999999;
+        z-index: 99999;
+
+        background: rgba(250, 250, 250, 0.9);
         
         ${FlexWrapper} {
-            display: flex;
             flex-direction: row;
+            justify-content: space-between;
         }
-    }*/
+    }
 `
 
 const RightMainList = styled.ul`
     display: flex;
     flex-direction: column;
-    //justify-content: space-between;
     gap: 40px;
 
     position: relative;
-    
-    
+
+    @media (max-width: 1155px) {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 20px 15px;
+        
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: 99999;
+    }
 `
 
 const RightMainItem = styled.li`
