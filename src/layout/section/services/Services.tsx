@@ -15,24 +15,34 @@ export const Services = () => {
                 <SectionTitle textTitle={"my services"} textDiscription={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum"}/>
 
                 <FlexWrapper wrap={"wrap"} justify={"space-between"} gap={"20px"}>
-                    <Service iconId={"my-services-coding"}
+                    <Service iconCheck
+                             iconId={"my-services-coding"}
                              title={"web development"}
                              description={"blog, e-commerce"}/>
-                    <Service iconId={"illustration"}
+                    <Service iconCheck
+                             iconId={"illustration"}
                              title={"uI/uX design"}
                              description={"Mobile app, website design"}/>
-                    <Service iconId={"microphone"}
+                    <Service iconCheck
+                             iconId={"microphone"}
                              title={"sound design"}
                              description={"Voice Over, Beat Making"}/>
-                    <Service iconId={"game-dev"}
+                    <Service iconCheck
+                             iconId={"game-dev"}
                              title={"game design"}
                              description={"Character Design, Props & Objects"}/>
-                    <Service iconId={"photographer"}
+                    <Service iconCheck
+                             iconId={"photographer"}
                              title={"photography"}
                              description={"portrait, product photography"}/>
 
-                    <ServiceAdvertising title={"advertising"}
-                             description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi."}/>
+                    <Service linkCheck
+                             title={"advertising"}
+                             description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi."}
+                             />
+
+                    {/*<ServiceAdvertising title={"advertising"}*/}
+                    {/*         description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi."}/>*/}
                 </FlexWrapper>
             </Container>
         </StyledServices>
