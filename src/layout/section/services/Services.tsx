@@ -4,8 +4,6 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import {Service} from "./service/Service";
 import {SectionTitle} from "../../../components/SectionTitle";
-import {ServiceAdvertising} from "./service/ServiceAdvertising";
-import {theme} from "../../../styles/Theme";
 
 export const Services = () => {
     return (
@@ -39,9 +37,6 @@ export const Services = () => {
                     <Service title={"advertising"}
                              description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi."}
                              />
-
-                    {/*<ServiceAdvertising title={"advertising"}*/}
-                    {/*         description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi."}/>*/}
                 </FlexWrapper>
             </Container>
         </StyledServices>

@@ -87,6 +87,7 @@ export const GlobalStyle = createGlobalStyle`
         overflow: hidden;
         background-color: ${theme.colors.secondaryBg};
         //background-color: #e9f8ea;
+        position: relative;
     }
 
     #root {

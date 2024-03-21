@@ -83,7 +83,10 @@ const StyledLeftMain = styled.aside`
     }
     
     @media (max-width: 1155px) {
-        display: none;
+        //display: none;
+        position: absolute;
+        left: -100%;
+        //max-width: 100vw;
     }
 `
 

@@ -55,7 +55,7 @@ const StyledService = styled.div`
 
         background-color: ${theme.colors.primaryBg};
         //max-width: 300px;
-        width: 310px;
+        width: 300px;
         padding: 34px 32px;
         flex-grow: 1;
     }
@@ -65,7 +65,7 @@ const StyledService = styled.div`
 
         background-color: ${theme.colors.primaryBg};
         //max-width: 300px;
-        width: 310px;
+        width: 300px;
         //height: 100%;
         //padding: 62px 20px 40px;
         padding: 30px 25px 28px;
