@@ -10,30 +10,25 @@ type ServicePropsType = {
     title?: string
     description?: string
     iconCheck?: boolean
-    linkCheck?: boolean
-    // width?: string
-    // height?: string
-    // viewBox?: string
 }
 
 export const Service = (props: ServicePropsType) => {
     if (props.iconCheck) {
         return (
-            <StyledService >
+            <StyledService className={"firstEl"}>
                 <FlexWrapper direction={"column"} align={"center"}>
                     <Icon iconId={props.iconId}/>
-                    <ServiceTitle>{props.title}</ServiceTitle>
+                    <ServiceTitle className={"firstElTitle"}>{props.title}</ServiceTitle>
                     <ServiceText>{props.description}</ServiceText>
                 </FlexWrapper>
             </StyledService>
         );
-    }
-    else {
+    } else {
         return (
-            <StyledService>
+            <StyledService className={"lastEl"}>
                 <FlexWrapper direction={"column"} align={"center"}>
                     <ServiceTitle>{props.title}</ServiceTitle>
-                    <ServiceText>{props.description}</ServiceText>
+                    <ServiceText className={"lastElText"}>{props.description}</ServiceText>
                     <Link backgroundColor={"unset"} gap={"0"}>
                         ORDER NOW
                         <Icon width={"20px"} height={"20px"} viewBox={"0 0 20 20"} iconId={"right-arrow"}/>
@@ -54,8 +49,8 @@ export const Service = (props: ServicePropsType) => {
     );*/
 };
 
-const StyledService = styled.div<ServicePropsType>`
-    ${props => props.iconCheck && css<ServicePropsType>`
+const StyledService = styled.div`
+    &.firstEl {
         outline: 1px solid #0e0d0d;
 
         background-color: ${theme.colors.primaryBg};
@@ -63,17 +58,17 @@ const StyledService = styled.div<ServicePropsType>`
         width: 310px;
         padding: 34px 32px;
         flex-grow: 1;
-    `}
-    
-    ${props => props.linkCheck && css<ServicePropsType>`
+    }
+
+    &.lastEl {
         outline: 1px solid #0e0d0d;
 
-        background-color: ${theme.colors.accent};
+        background-color: ${theme.colors.primaryBg};
         //max-width: 300px;
         width: 310px;
         //height: 100%;
         //padding: 62px 20px 40px;
-        padding: 30px 25px;
+        padding: 30px 25px 28px;
         flex-grow: 1;
 
         ${Link} {
@@ -83,8 +78,9 @@ const StyledService = styled.div<ServicePropsType>`
             font-weight: 700;
             line-height: 14px;
         }
-    `}
+    }
     
+
     /*@media (max-width: 1511px) {
             max-width: 290px;
             width: 100%;
@@ -96,23 +92,17 @@ const StyledService = styled.div<ServicePropsType>`
     }
 `
 
-const ServiceTitle = styled.h3<ServicePropsType>`
-    ${props => props.iconCheck && css<ServicePropsType>`
+const ServiceTitle = styled.h3`
+    &.firstElTitle {
         padding: 26px 0 15px;
-    `}
+    }
     
-    ${props => props.linkCheck && css<ServicePropsType>`
-        padding: 0;
-    `}
-
 `
 
-const ServiceText = styled.p<ServicePropsType>`
-    ${props => props.iconCheck && css<ServicePropsType>`
-        padding: 0;
-    `}
+const ServiceText = styled.p`
 
-    ${props => props.linkCheck && css<ServicePropsType>`
+    &.lastElText {
         padding: 24px 0;
-    `}
+    }
+    
 `
